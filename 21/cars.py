@@ -15,7 +15,7 @@ def get_all_jeeps(cars=cars):
 
 def get_first_model_each_manufacturer(cars=cars):
     """return a list of matching models (original ordering)"""
-    return [models[0] for _, models in cars.items()]
+    return [models[0] for models in cars.values()]
 
 
 def get_all_matching_models(cars=cars, grep='trail'):
@@ -23,8 +23,8 @@ def get_all_matching_models(cars=cars, grep='trail'):
        'grep' string which defaults to 'trail' for this exercise,
        sort the resulting sequence alphabetically"""
     grepped_models = []
-    for models in cars.values():
-        for model in models:
+    for make in cars.keys():
+        for model in cars[make]:
             if grep.lower() in model.lower():
                 grepped_models.append(model)
     return sorted(grepped_models)
@@ -33,6 +33,4 @@ def get_all_matching_models(cars=cars, grep='trail'):
 def sort_car_models(cars=cars):
     """return a copy of the cars dict with the car models (values)
        sorted alphabetically"""
-    for make, models in cars.items():
-        cars[make] = sorted(models)
-    return cars
+    return {make: sorted(models) for make, models in cars.items()}
