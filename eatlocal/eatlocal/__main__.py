@@ -1,4 +1,4 @@
-from .eatlocal import extract_bite, submit_bite
+from .eatlocal import extract_bite, submit_bite, download_bite
 from .cli import get_args
 
 
@@ -8,6 +8,8 @@ def main():
         extract_bite(args.extract)
     elif args.submit:
         submit_bite(args.submit)
+    elif args.download:
+        download_bite(args.download)
 
 
 if __name__ == "__main__":

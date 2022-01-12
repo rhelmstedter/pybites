@@ -9,6 +9,12 @@ def get_args():
 
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument(
+        "-d",
+        "--download",
+        help="Download bite",
+        dest="download",
+    )
+    group.add_argument(
         "-e",
         "--extract",
         help="Extract files into appropriate directory",
