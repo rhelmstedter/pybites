@@ -1,17 +1,11 @@
 import argparse
 
-# from . import __version__ as version
-
 
 def get_args():
     parser = argparse.ArgumentParser(
         description="Download, extract, and submit PyBites",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
-
-    # parser.add_argument(
-    #     "-v", "--version", actions="version", version=f"%(prog)s {version}"
-    # )
 
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument(
