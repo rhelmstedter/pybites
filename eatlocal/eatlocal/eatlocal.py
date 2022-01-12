@@ -3,7 +3,9 @@ from zipfile import ZipFile
 import webbrowser
 import requests
 from io import BytesIO
-# from urllib.request import urlopen
+
+USER = 'russell.helmstedter'
+PASSWORD = "not today satan"
 
 
 def download_bite(bite_number):
@@ -13,18 +15,19 @@ def download_bite(bite_number):
     :returns: None
 
     """
-    url = "https://codechalleng.es/bites/api/downloads/bites/{bite_number}/"
-    # with urlopen(url) as zipresp:
-    #     with ZipFile(BytesIO(zipresp.read())) as zfile:
-    #         zfile.extractall(f"./{bite_number}/")
-    # print(f"Finished extracting {bite_number}")
-    r = requests.get(url, stream=True)
+    zurl = f"https://codechalleng.es/bites/api/downloads/bites/{bite_number}/"
+    r = requests.get(
+        url=zurl,
+        auth=(USER, PASSWORD),
+        stream=True,
+    )
     if r.status_code == 200:
         z = ZipFile(BytesIO(r.content))
         z.extractall(f"./{bite_number}/")
-        print(f"bite {bite_number} downloaded and extracted")
+        print(f"bite {bite_number} downloaded and extracted.")
     else:
-        print("No response from website")
+        print(f"Status code: {r.status_code}")
+        print(f"Could not download bite {bite_number}.")
 
 
 def extract_bite(bite_number):
