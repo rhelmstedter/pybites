@@ -67,7 +67,7 @@ def submit_bite(bite_number):
         stderr=subprocess.STDOUT,
     )
     subprocess.call(
-        ["git", "commit", "-m'submission Bite {bite_number} @ codechalleng.es'"],
+        ["git", "commit", f"-m'submission Bite {bite_number} @ codechalleng.es'"],
         stdout=subprocess.DEVNULL,
         stderr=subprocess.STDOUT,
     )
