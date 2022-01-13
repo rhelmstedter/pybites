@@ -64,14 +64,17 @@ def submit_bite(bite_number):
     subprocess.call(
         ["git", "add", "."],
         stdout=subprocess.DEVNULL,
+        stderr=subprocess.STDOUT,
     )
     subprocess.call(
         ["git", "commit", "-m'submission Bite {bite_number} @ codechalleng.es'"],
         stdout=subprocess.DEVNULL,
+        stderr=subprocess.STDOUT,
     )
     subprocess.call(
         ["git", "push"],
         stdout=subprocess.DEVNULL,
+        stderr=subprocess.STDOUT,
     )
 
     # os.system("git add .")
