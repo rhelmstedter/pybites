@@ -60,8 +60,8 @@ def submit_bite(bite_number):
 
     """
 
-    os.system("git add -q . ")
-    os.system(f"git commit -qm'submission Bite {bite_number} @ codechalleng.es'")
+    os.system("git add . -q")
+    os.system(f"git commit -m'submission Bite {bite_number} @ codechalleng.es' -q")
     os.system("git push -q")
     print(f"Pushed bite {bite_number} to github")
 
