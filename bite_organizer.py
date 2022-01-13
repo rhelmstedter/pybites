@@ -8,7 +8,7 @@ pattern = r"pybites_bite(\d+).zip"
 zip_files = [file for file in os.listdir(r".") if file.endswith(".zip")]
 
 for bite in zip_files:
-    bite_number = re.findall(pattern, bite)[0]
+    bite_number = re.search(pattern, bite)
 
     if bite_number:
         print(f"Extracting bite {bite_number}")

@@ -4,7 +4,7 @@ import webbrowser
 import requests
 from io import BytesIO
 
-USER = 'russell.helmstedter'
+USER = "russell.helmstedter"
 PASSWORD = "not today satan"
 
 
@@ -15,7 +15,7 @@ def download_bite(bite_number):
     :returns: None
 
     """
-    zurl = f"https://codechalleng.es/bites/api/downloads/bites/{bite_number}/"
+    zurl = f"https://codechalleng.es/bites/api/downloads/bites/{bite_number}"
     r = requests.get(
         url=zurl,
         auth=(USER, PASSWORD),
@@ -59,9 +59,11 @@ def submit_bite(bite_number):
     :returns: None
 
     """
-    os.system("git add .")
-    os.system(f"git commit -m'solved bite {bite_number}'")
-    os.system("git push")
+
+    os.system("git add -q . ")
+    os.system(f"git commit -qm'submission Bite {bite_number} @ codechalleng.es'")
+    os.system("git push -q")
     print(f"Pushed bite {bite_number} to github")
+
     url = f"https://codechalleng.es/bites/{bite_number}/"
     webbrowser.open(url)
