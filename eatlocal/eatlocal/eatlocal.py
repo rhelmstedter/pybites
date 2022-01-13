@@ -3,6 +3,8 @@ from zipfile import ZipFile
 import webbrowser
 import requests
 from io import BytesIO
+import subprocess
+
 
 USER = "russell.helmstedter"
 PASSWORD = "not today satan"
@@ -59,10 +61,22 @@ def submit_bite(bite_number):
     :returns: None
 
     """
+    subprocess.call(
+        ["git", "add", "."],
+        stdout=subprocess.DEVNULL,
+    )
+    subprocess.call(
+        ["git", "commit", "-m'submission Bite {bite_number} @ codechalleng.es'"],
+        stdout=subprocess.DEVNULL,
+    )
+    subprocess.call(
+        ["git", "push"],
+        stdout=subprocess.DEVNULL,
+    )
 
-    os.system("git add . --quiet")
-    os.system(f"git commit -m'submission Bite {bite_number} @ codechalleng.es' --quiet")
-    os.system("git push --quiet")
+    # os.system("git add .")
+    # os.system(f"git commit -m'submission Bite {bite_number} @ codechalleng.es'")
+    # os.system("git push")
     print(f"\nPushed bite {bite_number} to github")
 
     url = f"https://codechalleng.es/bites/{bite_number}/"
