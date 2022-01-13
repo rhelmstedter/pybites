@@ -60,10 +60,10 @@ def submit_bite(bite_number):
 
     """
 
-    os.system("git add . -q")
-    os.system(f"git commit -m'submission Bite {bite_number} @ codechalleng.es' -q")
-    os.system("git push -q")
-    print(f"Pushed bite {bite_number} to github")
+    os.system("git add .")
+    os.system(f"git commit -m'submission Bite {bite_number} @ codechalleng.es'")
+    os.system("git push")
+    print(f"\nPushed bite {bite_number} to github")
 
     url = f"https://codechalleng.es/bites/{bite_number}/"
     webbrowser.open(url)
