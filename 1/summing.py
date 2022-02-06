@@ -3,3 +3,5 @@ def sum_numbers(numbers=None):
         return 5050
     else:
         return sum(numbers)
+
+"""Sneaky sneaky doc string"""
