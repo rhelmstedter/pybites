@@ -4,4 +4,3 @@ def sum_numbers(numbers=None):
     else:
         return sum(numbers)
 
-"""Sneaky sneaky doc string"""
