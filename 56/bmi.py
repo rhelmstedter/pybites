@@ -11,10 +11,19 @@ def calc_bmi(weight, length):
 
 def create_parser():
     """TODO:
-    This is a sneaky test...
        Create an ArgumentParser adding the right arguments to pass the tests,
-       returns a argparse.ArgumentParser object"""
-    pass
+       returns a argparse.ArgumentParser object
+       """
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-l",
+        "--length",
+    )
+    parser.add_argument(
+        "-w",
+        "--weight",
+    )
+    return parser
 
 
 def handle_args(args=None):
