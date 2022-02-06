@@ -14,16 +14,16 @@ def test_all_list_items_are_namedtuples():
 
 
 def test_assert_all_links_contain_store():
-    assert all('store.steampowered.com' in game.link for game in games)
+    assert all("store.steampowered.com" in game.link for game in games)
 
 
 def test_title_and_url_first_entry():
     first_game = games[0]
-    assert first_game.title == 'Midweek Madness - RiME, 33% Off'
-    assert first_game.link == 'http://store.steampowered.com/news/31695/'
+    assert first_game.title == "Midweek Madness - RiME, 33% Off"
+    assert first_game.link == "http://store.steampowered.com/news/31695/"
 
 
 def test_title_and_url_last_entry():
     last_game = games[-1]
-    assert last_game.title == 'Now Available on Steam - Loco Dojo, 35% off!'
-    assert last_game.link == 'http://store.steampowered.com/news/31113/'
+    assert last_game.title == "Now Available on Steam - Loco Dojo, 35% off!"
+    assert last_game.link == "http://store.steampowered.com/news/31113/"

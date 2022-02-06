@@ -5,7 +5,7 @@ import feedparser
 # cached version to have predictable results for testing
 FEED_URL = "https://bites-data.s3.us-east-2.amazonaws.com/steam_gaming.xml"
 
-Game = namedtuple('Game', 'title link')
+Game = namedtuple("Game", "title link")
 
 
 def get_games():
@@ -13,5 +13,3 @@ def get_games():
     r = requests.get(FEED_URL)
     feed_file = feedparser.parse(r.content)
     return [Game(entry.title, entry.link) for entry in feed_file.entries]
-
-    

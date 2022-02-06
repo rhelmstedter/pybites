@@ -10,14 +10,15 @@ Remember me when no more day by day
 You tell me of our future that you planned:
 Only remember me; you understand"""
 
+
 def print_hanging_indents(poem):
-    lines = [line.strip() for line in poem.split('\n')]
+    lines = [line.strip() for line in poem.split("\n")]
     for i, line in enumerate(lines):
         if i == 0:
             print(line)
-        elif lines[i-1] == '':
+        elif lines[i - 1] == "":
             print(line)
-        elif line == '':
+        elif line == "":
             continue
         else:
-            print(' '*INDENTS + line)
+            print(" " * INDENTS + line)
