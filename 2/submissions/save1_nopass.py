@@ -1,5 +1,7 @@
 import re
 
+"""This is a test to see what happens"""
+
 COURSE = ('Introduction 1 Lecture 01:47'
           'The Basics 4 Lectures 32:03'
           'Getting Technical!  4 Lectures 41:51'
