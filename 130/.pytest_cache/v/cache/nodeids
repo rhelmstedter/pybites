@@ -1,0 +1,9 @@
+[
+  "test_cars.py::test_get_models_mercedes",
+  "test_cars.py::test_get_models_nissan",
+  "test_cars.py::test_get_models_open",
+  "test_cars.py::test_get_models_volkswagen",
+  "test_cars.py::test_most_prolific_automaker_1999",
+  "test_cars.py::test_most_prolific_automaker_2008",
+  "test_cars.py::test_most_prolific_automaker_2013"
+]
