@@ -42,5 +42,7 @@ def get_users_for_shell(
     Return a list of users.
     """
     return [
-        line.split(":")[0] for line in passwd_output.split("\n") if grep_shell in line
+        line.split(":")[0]
+        for line in passwd_output.split("\n")
+        if f"/{grep_shell}" in line
     ]
