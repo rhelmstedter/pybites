@@ -1,0 +1,10 @@
+[
+  "test_combos.py::test_find_number_pairs[numbers0-10-expected0]",
+  "test_combos.py::test_find_number_pairs[numbers1-10-expected1]",
+  "test_combos.py::test_find_number_pairs[numbers2-10-expected2]",
+  "test_combos.py::test_find_number_pairs[numbers3-10-expected3]",
+  "test_combos.py::test_find_number_pairs[numbers4-1-expected4]",
+  "test_combos.py::test_find_number_pairs[numbers5-0-expected5]",
+  "test_combos.py::test_find_number_pairs[numbers6-20-expected6]",
+  "test_combos.py::test_find_number_pairs[numbers7-10-expected7]"
+]
