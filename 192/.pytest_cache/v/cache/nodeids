@@ -1,0 +1,9 @@
+[
+  "test_log_it.py::test_callable_log_levels",
+  "test_log_it.py::test_log_it[This is a critical message-critical]",
+  "test_log_it.py::test_log_it[This is a debug message-debug]",
+  "test_log_it.py::test_log_it[This is a warning message-warning]",
+  "test_log_it.py::test_log_it[This is an error message-error]",
+  "test_log_it.py::test_log_it[This is an info message-info]",
+  "test_log_it.py::test_wrong_log_level"
+]
