@@ -36,20 +36,35 @@ blood_type_text = {
     "AB+": Bloodtype.AB_POS,
 }
 
+
 # complete :
 def check_bt(donor, recipient):
-    """ Checks red blood cell compatibility based on 8 blood types
-        Args:
-        donor (int | str | Bloodtype): red blood cell type of the donor
-        recipient (int | str | Bloodtype): red blood cell type of the recipient
-        Returns:
-        bool: True for compatability, False otherwise.
+    """Checks red blood cell compatibility based on 8 blood types
+    Args:
+    donor (int | str | Bloodtype): red blood cell type of the donor
+    recipient (int | str | Bloodtype): red blood cell type of the recipient
+    Returns:
+    bool: True for compatability, False otherwise.
     """
-    A, B, Rh-D = _particular_antigen_comp(donor, recipient)
-    if A < 0 or B< 0 or Rh-D < 0:
+    if type(donor) == str:
+        try:
+            donor = blood_type_text[donor].value
+            recipient = blood_type_text[recipient].value
+        except KeyError:
+            raise ValueError
+    elif type(donor) is Bloodtype:
+        donor = donor.value
+        recipient = recipient.value
+    elif type(donor) != int or type(recipient) != int:
+        raise TypeError
+    elif not 0 <= donor <= 7 or not 0 <= recipient <= 7:
+        raise ValueError
+
+    a, b, rh = _particular_antigen_comp(donor, recipient)
+
+    if a < 0 or b < 0 or rh < 0:
         return False
     return True
-
 
 
 # hint
@@ -57,7 +72,7 @@ def _particular_antigen_comp(donor: int, recipient: int) -> tuple:
     """Returns a particalar antigen compatibility, where each tuple member
     marks a compatibility for a particular antigen  (A, B, Rh-D).
     If tuple member is non-negative there is a compatibility.
-    For red blood cell compatibility is required that 
+    For red blood cell compatibility is required that
     all tuple members are non-negative (i.e. compatibility for all 3 antigens).
     0- bloodtype is represented as 0 ; AB+ is represented as 7; see Bloodtype enum
     Examples:

@@ -1,0 +1,13 @@
+[
+  "test_bt.py::test_AB_POS_can_donate_to_own_group_only_numeric_input",
+  "test_bt.py::test_ZERO_NEG_can_recieve_from_own_group_only_numeric_input",
+  "test_bt.py::test_invalid_type",
+  "test_bt.py::test_invalid_value_numeric_input",
+  "test_bt.py::test_invalid_value_text_input",
+  "test_bt.py::test_red_blood_cell_compatibility",
+  "test_bt.py::test_red_blood_cell_compatibility_text_input",
+  "test_bt.py::test_red_blood_cell_incompatibility",
+  "test_bt.py::test_red_blood_cell_incompatibility_text_input",
+  "test_bt.py::test_universal_donor",
+  "test_bt.py::test_universal_recipient"
+]
