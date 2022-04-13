@@ -1,5 +1,0 @@
-{
-  "test_user.py::test_julian_mixed_case": true,
-  "test_user.py::test_tania_title_name": true,
-  "test_user.py::test_noah_use_dunder_in_repr": true
-}

@@ -6,7 +6,10 @@ def test_bob_lowercase():
     assert bob.get_full_name == "Bob Belderbos"
     assert bob.username == "bbelderb"  # lowercase!
     assert str(bob) == "Bob Belderbos (bbelderb)"
-    assert repr(bob) == "User('bob', 'belderbos')"
+    assert repr(bob) in [
+        'User("bob", "belderbos")',
+        "User('bob', 'belderbos')",
+    ]
 
 
 def test_julian_mixed_case():
@@ -14,7 +17,10 @@ def test_julian_mixed_case():
     assert bob.get_full_name == "Julian Sequeira"
     assert bob.username == "jsequeir"  # lowercase!
     assert str(bob) == "Julian Sequeira (jsequeir)"
-    assert repr(bob) == 'User("julian", "Sequeira")'
+    assert repr(bob) in [
+        'User("julian", "Sequeira")',
+        "User('julian', 'Sequeira')",
+    ]
 
 
 def test_tania_title_name():
@@ -22,7 +28,10 @@ def test_tania_title_name():
     assert bob.get_full_name == "Tania Courageous"  # aka PyBites Ninja
     assert bob.username == "tcourage"  # lowercase!
     assert str(bob) == "Tania Courageous (tcourage)"
-    assert repr(bob) == 'User("Tania", "Courageous")'
+    assert repr(bob) in [
+        'User("Tania", "Courageous")',
+        "User('Tania', 'Courageous')",
+    ]
 
 
 def test_noah_use_dunder_in_repr():
@@ -38,6 +47,8 @@ def test_noah_use_dunder_in_repr():
     assert noah.get_full_name == "Noah Kagan"
     assert noah.username == "nkagan"  # lowercase!
     assert str(noah) == "Noah Kagan (nkagan)"
-
     # it should show the subclass!
-    assert repr(noah) == 'SpecialUser("Noah", "Kagan")'
+    assert repr(noah) in [
+        'SpecialUser("Noah", "Kagan")',
+        "SpecialUser('Noah', 'Kagan')",
+    ]

@@ -1,11 +1,9 @@
-from typing import List
-
 IGNORE_CHAR = "b"
 QUIT_CHAR = "q"
 MAX_NAMES = 5
 
 
-def filter_names(names: List[str]) -> List[str]:
+def filter_names(names: list[str]) -> list[str]:
     filtered = []
     for name in names:
         if name.startswith(IGNORE_CHAR):
@@ -18,5 +16,4 @@ def filter_names(names: List[str]) -> List[str]:
             break
         else:
             filtered.append(name)
-
     return filtered
