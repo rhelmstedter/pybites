@@ -15,5 +15,6 @@ def test_negatives():
 
 def test_bad_types():
     with pytest.raises(TypeError):
-        list_to_decimal(["2", 3, 12])
-
+        list_to_decimal(["2", 3, 1])
+        list_to_decimal([3.6, 4, 1])
+        list_to_decimal([True, 4, 1])
