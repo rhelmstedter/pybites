@@ -32,5 +32,5 @@ def test_boo():
 
 
 def test_range():
-    line = [line for line in inspect.getsourcelines(numbers_to_dec) if 'range' in line][0]
-    assert "range(10)" in line
+    line = [line for line in inspect.getsourcelines(numbers_to_dec)[0] if 'range' in line][1]
+    assert "range(0, 10)" in line
