@@ -1,5 +1,7 @@
-import pytest
+import inspect
 
+import pytest
+import numbers_to_dec
 from numbers_to_dec import list_to_decimal
 
 
@@ -27,3 +29,8 @@ def test_float():
 def test_boo():
     with pytest.raises(TypeError):
         list_to_decimal([6, 2, True])
+
+
+def test_range():
+    line = [line for line in inspect.getsourcelines(numbers_to_dec) if 'range' in line][0]
+    assert "range(10)" in line
