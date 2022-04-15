@@ -1,7 +1,4 @@
-import inspect
-
 import pytest
-import numbers_to_dec
 from numbers_to_dec import list_to_decimal
 
 
@@ -13,7 +10,7 @@ def test_good_vales():
 def test_outside_range():
     with pytest.raises(ValueError):
         list_to_decimal([-3, 12])
-        list_to_decimal([-3, 11])
+        list_to_decimal([10, 0])
 
 
 def test_str():
@@ -29,8 +26,3 @@ def test_float():
 def test_boo():
     with pytest.raises(TypeError):
         list_to_decimal([6, 2, True])
-
-
-def test_range():
-    line = [line for line in inspect.getsourcelines(numbers_to_dec)[0] if 'range' in line][1]
-    assert not "range(0, 11)" in line
