@@ -8,13 +8,13 @@ def test_good_vales():
     assert result == 428
 
 
-def test_negatives():
+def test_outside_range():
     with pytest.raises(ValueError):
         list_to_decimal([-3, 12])
 
 
-def test_bad_types():
+def test_non_ints():
     with pytest.raises(TypeError):
-        list_to_decimal(["2", 3, 1])
+        list_to_decimal(["4", 5, 3, 1])
         list_to_decimal([3.6, 4, 1])
-        list_to_decimal([True, 4, 1])
+        list_to_decimal([6, 2, True])
