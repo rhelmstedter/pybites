@@ -1,5 +1,10 @@
 [
   "test_numbers_to_dec.py::test_bad_types",
+  "test_numbers_to_dec.py::test_boo",
+  "test_numbers_to_dec.py::test_float",
   "test_numbers_to_dec.py::test_good_vales",
-  "test_numbers_to_dec.py::test_negatives"
+  "test_numbers_to_dec.py::test_negatives",
+  "test_numbers_to_dec.py::test_non_ints",
+  "test_numbers_to_dec.py::test_outside_range",
+  "test_numbers_to_dec.py::test_str"
 ]
