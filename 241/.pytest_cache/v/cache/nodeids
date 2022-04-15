@@ -1,0 +1,5 @@
+[
+  "test_numbers_to_dec.py::test_bad_types",
+  "test_numbers_to_dec.py::test_good_vales",
+  "test_numbers_to_dec.py::test_negatives"
+]
