@@ -33,4 +33,4 @@ def test_boo():
 
 def test_range():
     line = [line for line in inspect.getsourcelines(numbers_to_dec)[0] if 'range' in line][1]
-    assert "range(0, 10)" in line
+    assert not "range(0, 11)" in line
