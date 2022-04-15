@@ -17,46 +17,38 @@ def get_slice(ser: pd.Series, start: int, end: int) -> pd.core.series.Series:
     return ser.iloc[start:end]
 
 
-def get_slice_inclusive(ser: pd.Series,
-                        start: int, end: int) -> pd.core.series.Series:
+def get_slice_inclusive(ser: pd.Series, start: int, end: int) -> pd.core.series.Series:
     """Return the slice of the given Series in the range between
     start and end inclusive.
     """
     return ser.iloc[start:end + 1]
 
 
-
 def return_head(ser: pd.Series, num: int) -> pd.core.series.Series:
-    """Return the first num elements of the given Series.
-    """
+    """Return the first num elements of the given Series."""
     return ser.head(num)
 
 
 def return_tail(ser: pd.Series, num: int) -> pd.core.series.Series:
-    """Return the last num elements of the given Series.
-    """
+    """Return the last num elements of the given Series."""
     return ser.tail(num)
 
 
 def get_index(ser: pd.Series) -> pd.core.indexes.base.Index:
-    """Return all indexes of the given Series.
-    """
+    """Return all indexes of the given Series."""
     return ser.index
 
 
 def get_values(ser: pd.Series) -> np.ndarray:
-    """Return all the values of the given Series.
-    """
+    """Return all the values of the given Series."""
     return ser.to_numpy()
 
 
-def get_every_second_indexes(ser: pd.Series,
-                             even_index=True) -> pd.core.series.Series:
+def get_every_second_indexes(ser: pd.Series, even_index=True) -> pd.core.series.Series:
     """Return all rows where the index is either even or odd.
     If even_index is True return every index where idx % 2 == 0
     If even_index is False return every index where idx % 2 != 0
     Assume default indexing i.e. 0 -> n
     """
-    if even_index:
-        return ser.drop(index=[num for num in range(1, len(ser), 2)])
-    return ser.drop(index=[num for num in range(0, len(ser), 2)])
+    first_idx = 0 if even_index else 1
+    return ser.iloc[first_idx::2]
