@@ -1,0 +1,18 @@
+[
+  "test_series.py::test_all_even_indexes_returned",
+  "test_series.py::test_all_odd_indexes_returned",
+  "test_series.py::test_get_index",
+  "test_series.py::test_get_slice",
+  "test_series.py::test_get_slice_inclusive",
+  "test_series.py::test_get_values",
+  "test_series.py::test_return_at_index[0-0.0]",
+  "test_series.py::test_return_at_index[1000-1.0]",
+  "test_series.py::test_return_at_index[500-0.5]",
+  "test_series.py::test_return_at_index_raise_exception",
+  "test_series.py::test_return_head[0-0.0]",
+  "test_series.py::test_return_head[5-0.005]",
+  "test_series.py::test_return_head[9-0.009]",
+  "test_series.py::test_return_tail[1000-1.0]",
+  "test_series.py::test_return_tail[991-0.991]",
+  "test_series.py::test_return_tail[995-0.995]"
+]
