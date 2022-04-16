@@ -1,0 +1,17 @@
+[
+  "test_minimum_number.py::test_minimum_number[test_input0-0]",
+  "test_minimum_number.py::test_minimum_number[test_input1-0]",
+  "test_minimum_number.py::test_minimum_number[test_input10-123456789]",
+  "test_minimum_number.py::test_minimum_number[test_input11-24]",
+  "test_minimum_number.py::test_minimum_number[test_input12-12345]",
+  "test_minimum_number.py::test_minimum_number[test_input13-12345]",
+  "test_minimum_number.py::test_minimum_number[test_input14-12345]",
+  "test_minimum_number.py::test_minimum_number[test_input2-1]",
+  "test_minimum_number.py::test_minimum_number[test_input3-5]",
+  "test_minimum_number.py::test_minimum_number[test_input4-1]",
+  "test_minimum_number.py::test_minimum_number[test_input5-17]",
+  "test_minimum_number.py::test_minimum_number[test_input6-17]",
+  "test_minimum_number.py::test_minimum_number[test_input7-123]",
+  "test_minimum_number.py::test_minimum_number[test_input8-159]",
+  "test_minimum_number.py::test_minimum_number[test_input9-59]"
+]
