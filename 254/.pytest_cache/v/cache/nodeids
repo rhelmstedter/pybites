@@ -1,0 +1,8 @@
+[
+  "test_scoping.py::test_sum_numbers[arg0-0--1]",
+  "test_scoping.py::test_sum_numbers[arg1-6--1]",
+  "test_scoping.py::test_sum_numbers[arg2-150-0]",
+  "test_scoping.py::test_sum_numbers[arg3-250-2]",
+  "test_scoping.py::test_sum_numbers[arg4-450-6]",
+  "test_scoping.py::test_sum_numbers[arg5-1450-20]"
+]
