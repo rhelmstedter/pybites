@@ -1,0 +1,11 @@
+[
+  "test_intersection.py::test_basic[inputs0-expected0]",
+  "test_intersection.py::test_basic[inputs1-expected1]",
+  "test_intersection.py::test_basic[inputs2-expected2]",
+  "test_intersection.py::test_basic[inputs3-expected3]",
+  "test_intersection.py::test_basic[inputs4-expected4]",
+  "test_intersection.py::test_edgecases[inputs0-expected0]",
+  "test_intersection.py::test_edgecases[inputs1-expected1]",
+  "test_intersection.py::test_edgecases[inputs2-expected2]",
+  "test_intersection.py::test_edgecases[inputs3-expected3]"
+]
