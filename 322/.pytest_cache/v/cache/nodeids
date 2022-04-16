@@ -1,0 +1,16 @@
+[
+  "test_progress.py::test_ontrack_reading[args0-True]",
+  "test_progress.py::test_ontrack_reading[args1-False]",
+  "test_progress.py::test_ontrack_reading[args10-True]",
+  "test_progress.py::test_ontrack_reading[args11-True]",
+  "test_progress.py::test_ontrack_reading[args2-True]",
+  "test_progress.py::test_ontrack_reading[args3-True]",
+  "test_progress.py::test_ontrack_reading[args4-False]",
+  "test_progress.py::test_ontrack_reading[args5-False]",
+  "test_progress.py::test_ontrack_reading[args6-True]",
+  "test_progress.py::test_ontrack_reading[args7-True]",
+  "test_progress.py::test_ontrack_reading[args8-False]",
+  "test_progress.py::test_ontrack_reading[args9-False]",
+  "test_progress.py::test_without_days_arg_current_date_december",
+  "test_progress.py::test_without_days_arg_current_date_july"
+]
