@@ -1,0 +1,4 @@
+[
+  "test_serialization.py::test_deserialize_movie_rented_data",
+  "test_serialization.py::test_serialize_and_deserialize_other_data"
+]
