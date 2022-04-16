@@ -1,0 +1,20 @@
+[
+  "test_identity_and_equality.py::test_car_age[2-Neither a week, nor a year old]",
+  "test_identity_and_equality.py::test_car_age[365-A year old]",
+  "test_identity_and_equality.py::test_car_age[7-A week old]",
+  "test_identity_and_equality.py::test_is_same_car_color_and_model[car10-car20-True]",
+  "test_identity_and_equality.py::test_is_same_car_color_and_model[car11-car21-True]",
+  "test_identity_and_equality.py::test_is_same_car_color_and_model[car12-car22-True]",
+  "test_identity_and_equality.py::test_is_same_car_color_and_model[car13-car23-False]",
+  "test_identity_and_equality.py::test_is_the_same_instance_of_car[car10-car20-True]",
+  "test_identity_and_equality.py::test_is_the_same_instance_of_car[car11-car21-True]",
+  "test_identity_and_equality.py::test_is_the_same_instance_of_car[car12-car22-False]",
+  "test_identity_and_equality.py::test_the_same_configuration[list10-list20-True]",
+  "test_identity_and_equality.py::test_the_same_configuration[list11-list21-True]",
+  "test_identity_and_equality.py::test_the_same_configuration[list12-list22-True]",
+  "test_identity_and_equality.py::test_the_same_configuration[list13-list23-True]",
+  "test_identity_and_equality.py::test_the_same_configuration[list14-list24-True]",
+  "test_identity_and_equality.py::test_the_same_configuration[list15-list25-True]",
+  "test_identity_and_equality.py::test_the_same_configuration[list16-list26-True]",
+  "test_identity_and_equality.py::test_the_same_configuration[list17-list27-False]"
+]
