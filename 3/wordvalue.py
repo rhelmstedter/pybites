@@ -26,14 +26,16 @@ LETTER_SCORES = {
 
 def load_words():
     """Load the words dictionary (DICTIONARY constant) into a list and return it"""
-    pass
+    with open(DICTIONARY, "r") as words:
+        return [word.strip() for word in words.readlines()]
 
 
 def calc_word_value(word):
     """Given a word calculate its value using the LETTER_SCORES dict"""
-    pass
+    return sum([LETTER_SCORES.get(letter.upper(), 0) for letter in word])
 
 
 def max_word_value(words):
     """Given a list of words calculate the word with the maximum value and return it"""
-    pass
+    scores = {word: calc_word_value(word) for word in words}
+    return max(scores, key=scores.get)
