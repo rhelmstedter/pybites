@@ -1,0 +1,5 @@
+[
+  "test_pcc_stats.py::test_diehard_other_input",
+  "test_pcc_stats.py::test_diehard_pybites",
+  "test_pcc_stats.py::test_gen_files"
+]
