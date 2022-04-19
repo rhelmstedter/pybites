@@ -1,0 +1,4 @@
+[
+  "test_logtimes.py::test_convert_to_datetime",
+  "test_logtimes.py::test_time_between_events"
+]
