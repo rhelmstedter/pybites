@@ -1,0 +1,4 @@
+[
+  "test_palindrome.py::test_get_longest_palindrome",
+  "test_palindrome.py::test_is_palidrome"
+]
