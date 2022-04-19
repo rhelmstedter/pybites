@@ -1,0 +1,4 @@
+[
+  "test_divide.py::test_positive_divide_exceptions",
+  "test_divide.py::test_positive_divide_good_values"
+]
