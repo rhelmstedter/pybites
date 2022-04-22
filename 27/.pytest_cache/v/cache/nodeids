@@ -1,0 +1,7 @@
+[
+  "test_omdb.py::test_data_analysis[get_movie_longest_runtime-Blade Runner 2049]",
+  "test_omdb.py::test_data_analysis[get_movie_most_nominations-Fight Club]",
+  "test_omdb.py::test_data_analysis[get_single_comedy-Horrible Bosses]",
+  "test_omdb.py::test_len_movie_data",
+  "test_omdb.py::test_type_of_movie_elements"
+]
