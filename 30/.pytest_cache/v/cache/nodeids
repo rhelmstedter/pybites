@@ -1,0 +1,14 @@
+[
+  "test_directors.py::test_calc_mean_score",
+  "test_directors.py::test_director_in_top_scores[Alejandro G. I\\xf1\\xe1rritu]",
+  "test_directors.py::test_director_in_top_scores[Frank Darabont]",
+  "test_directors.py::test_director_in_top_scores[Hayao Miyazaki]",
+  "test_directors.py::test_director_in_top_scores[James Cameron]",
+  "test_directors.py::test_director_in_top_scores[Joss Whedon]",
+  "test_directors.py::test_director_in_top_scores[Quentin Tarantino]",
+  "test_directors.py::test_director_in_top_scores[Stanley Kubrick]",
+  "test_directors.py::test_director_movies_data_structure",
+  "test_directors.py::test_get_average_scores_top_directors",
+  "test_directors.py::test_get_movies_by_director",
+  "test_directors.py::test_ignore_older_movies"
+]
