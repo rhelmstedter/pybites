@@ -1,0 +1,4 @@
+{
+  "test_dates.py::test_get_month_most_posts": true,
+  "test_dates.py::test_get_month_most_posts_more_in_2018": true
+}
