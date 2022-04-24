@@ -1,0 +1,4 @@
+[
+  "test_top_n.py::test_get_top_n",
+  "test_top_n.py::test_heapq_used"
+]
