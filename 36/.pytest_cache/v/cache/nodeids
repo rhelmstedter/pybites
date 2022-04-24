@@ -1,0 +1,12 @@
+[
+  "test_profile.py::test_get_profile_award",
+  "test_profile.py::test_get_profile_dict",
+  "test_profile.py::test_get_profile_no_age",
+  "test_profile.py::test_get_profile_no_name",
+  "test_profile.py::test_get_profile_one_sport",
+  "test_profile.py::test_get_profile_too_many_sports",
+  "test_profile.py::test_get_profile_two_sports",
+  "test_profile.py::test_get_profile_two_sports_and_one_award",
+  "test_profile.py::test_get_profile_two_sports_and_three_awards",
+  "test_profile.py::test_get_profile_valueerror"
+]
