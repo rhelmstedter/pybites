@@ -1,0 +1,8 @@
+[
+  "test_password.py::test_password_cache_cannot_reuse",
+  "test_password.py::test_password_len",
+  "test_password.py::test_password_missing_chars",
+  "test_password.py::test_password_not_used_before",
+  "test_password.py::test_password_only_one_letter",
+  "test_password.py::test_validate_password_good_pws"
+]
