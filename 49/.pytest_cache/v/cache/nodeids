@@ -1,0 +1,7 @@
+[
+  "test_packt.py::test_book_description",
+  "test_packt.py::test_book_image",
+  "test_packt.py::test_book_link",
+  "test_packt.py::test_book_title",
+  "test_packt.py::test_type"
+]
