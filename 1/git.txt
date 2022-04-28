@@ -1,6 +1,6 @@
 ## Code submission instructions:
 
-git clone https://github.com/rhelmstedter/pybites
+git clone https://github.com/russell.helmstedter/pybites
 cd pybites
 mkdir 1
 cd 1
