@@ -1,0 +1,21 @@
+[
+  "test_calculator.py::test_add_operations[args0-1]",
+  "test_calculator.py::test_add_operations[args1-3]",
+  "test_calculator.py::test_add_operations[args2-6]",
+  "test_calculator.py::test_add_operations[args3-10.5]",
+  "test_calculator.py::test_call_with_wrong_operation",
+  "test_calculator.py::test_div_operations[args0-2]",
+  "test_calculator.py::test_div_operations[args1-0]",
+  "test_calculator.py::test_div_operations[args2-0.29]",
+  "test_calculator.py::test_div_operations[args3-0.1]",
+  "test_calculator.py::test_help_text_hints",
+  "test_calculator.py::test_mul_operations[args0-1]",
+  "test_calculator.py::test_mul_operations[args1-2]",
+  "test_calculator.py::test_mul_operations[args2-29.4]",
+  "test_calculator.py::test_mul_operations[args3--29.4]",
+  "test_calculator.py::test_one_arg_no_numbers_exits",
+  "test_calculator.py::test_sub_operations[args0-1]",
+  "test_calculator.py::test_sub_operations[args1--1]",
+  "test_calculator.py::test_sub_operations[args2-2.5]",
+  "test_calculator.py::test_sub_operations[args3--2]"
+]
