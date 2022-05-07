@@ -1,0 +1,7 @@
+[
+  "test_scrabble.py::test_max_word[B, R, C, O, O, E, O-boce]",
+  "test_scrabble.py::test_max_word[E, P, A, E, I, O, A-expected2]",
+  "test_scrabble.py::test_max_word[G, A, R, Y, T, E, V-garvey]",
+  "test_scrabble.py::test_max_word[O, N, V, R, A, Z, H-zonar]",
+  "test_scrabble.py::test_max_word[T, I, I, G, T, T, L-gilt]"
+]
