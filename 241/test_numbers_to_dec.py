@@ -10,7 +10,7 @@ def test_good_vales():
 def test_outside_range():
     with pytest.raises(ValueError):
         list_to_decimal([-3, 12])
-        list_to_decimal([10, 0])
+        list_to_decimal([10])
 
 
 def test_str():

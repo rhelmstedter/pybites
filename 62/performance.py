@@ -1,7 +1,7 @@
-from functools import wraps
 from collections import deque
+from functools import wraps
 from time import time
-from typing import Deque, List, Set, Generator
+from typing import Deque, Generator, List, Set
 
 
 def timing(f):

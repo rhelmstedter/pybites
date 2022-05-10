@@ -1,8 +1,8 @@
-import os
+from os import getenv
 import urllib.request
 
 # PREWORK
-TMP = os.getenv("TMP", "/tmp")
+TMP = getenv("TMP", "/tmp")
 S3 = "https://bites-data.s3.us-east-2.amazonaws.com/"
 DICT = "dictionary.txt"
 DICTIONARY = os.path.join(TMP, DICT)
@@ -21,21 +21,20 @@ LETTER_SCORES = {
     letter: score for score, letters in scrabble_scores for letter in letters.split()
 }
 
+
 # start coding
-
-
 def load_words():
-    """Load the words dictionary (DICTIONARY constant) into a list and return it"""
+    """Load the words dictionary (DICTIONARY constant) into a list and return it."""
     with open(DICTIONARY, "r") as words:
         return [word.strip() for word in words.readlines()]
 
 
 def calc_word_value(word):
-    """Given a word calculate its value using the LETTER_SCORES dict"""
+    """Given a word calculate its value using the LETTER_SCORES dict."""
     return sum([LETTER_SCORES.get(letter.upper(), 0) for letter in word])
 
 
 def max_word_value(words):
-    """Given a list of words calculate the word with the maximum value and return it"""
+    """Given a list of words calculate the word with the maximum value and return it."""
     scores = {word: calc_word_value(word) for word in words}
     return max(scores, key=scores.get)

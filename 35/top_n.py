@@ -37,4 +37,4 @@ def get_latest_dates(dates, n=3):
 
 
 def get_highest_earnings(earnings_mln, n=3):
-    return heapq.nlargest(n, earnings_mln, key=lambda d: d['earnings'])
+    return heapq.nlargest(n, dates, key=lambda d: d['earnings'])

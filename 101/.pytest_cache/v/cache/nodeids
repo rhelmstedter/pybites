@@ -1,5 +1,0 @@
-[
-  "test_driving.py::test_not_allowed_to_drive",
-  "test_driving.py::test_allowed_to_drive",
-  "test_driving.py::test_allowed_to_drive_other_name"
-]
