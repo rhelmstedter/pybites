@@ -1,0 +1,6 @@
+[
+  "test_score.py::test_average",
+  "test_score.py::test_enum_content",
+  "test_score.py::test_equality_comparison",
+  "test_score.py::test_str_using_thumbsup"
+]
