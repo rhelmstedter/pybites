@@ -1,0 +1,6 @@
+[
+  "test_flatten.py::test_flatten_ints_and_chars",
+  "test_flatten.py::test_flatten_various_levels",
+  "test_flatten.py::test_flatten_various_levels_different_contant",
+  "test_flatten.py::test_works_with_tuple_as_well"
+]
