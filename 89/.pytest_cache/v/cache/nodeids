@@ -1,0 +1,6 @@
+[
+  "test_states.py::test_combine_state_names_and_abbreviations",
+  "test_states.py::test_get_every_nth_state",
+  "test_states.py::test_get_longest_state",
+  "test_states.py::test_get_state_abbrev"
+]
