@@ -21,3 +21,4 @@ def convert_eu_to_us_date(date):
     ranges (no need to code this, datetime does this out of the box)"""
     dt_obj = datetime.strptime(date, "%d/%m/%Y")
     return dt_obj.strftime("%m/%d/%Y")
+

@@ -25,9 +25,9 @@ def get_us_bank_holidays(content=content):
        holiday table (css class = list-table), and return a dict of
        keys -> months and values -> list of bank holidays"""
     soup = BeautifulSoup(content, 'html.parser')
-    table = soup.find_all('table')[0]
+    table = soup.find('table', class_="list-table")
     for row in table.find_all('tr')[1:]:
-        month = row.time.text.split('-')[1]
+        year, month, day = row.time.text.split('-')
         holiday = row.a.text.strip()
         holidays[month].append(holiday)
     return holidays
