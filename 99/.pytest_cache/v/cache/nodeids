@@ -1,0 +1,5 @@
+[
+  "test_sequence_generator.py::test_first_ten_first_round",
+  "test_sequence_generator.py::test_first_ten_second_round",
+  "test_sequence_generator.py::test_last_ten_third_round"
+]
