@@ -1,0 +1,11 @@
+[
+  "test_non_ascii.py::test_extract_non_ascii_words[An preost wes on leoden, La\\u021damon was ihoten-expected0]",
+  "test_non_ascii.py::test_extract_non_ascii_words[Fichier non trouv\\xe9-expected5]",
+  "test_non_ascii.py::test_extract_non_ascii_words[He wes Leovena\\xf0es sone -- li\\xf0e him be Drihten-expected1]",
+  "test_non_ascii.py::test_extract_non_ascii_words[He wonede at Ernle\\u021de at \\xe6\\xf0elen are chirechen-expected2]",
+  "test_non_ascii.py::test_extract_non_ascii_words[Onfest Radestone, \\xfeer he bock radde-expected4]",
+  "test_non_ascii.py::test_extract_non_ascii_words[Over \\u0e55\\u0e57 57 flavours-expected6]",
+  "test_non_ascii.py::test_extract_non_ascii_words[S\\xed ... habr\\xe1 que saber algo de Unicode-expected7]",
+  "test_non_ascii.py::test_extract_non_ascii_words[This string only contains ascii words-expected8]",
+  "test_non_ascii.py::test_extract_non_ascii_words[Uppen Sevarne sta\\xfee sel \\xfear him \\xfeuhte-expected3]"
+]
