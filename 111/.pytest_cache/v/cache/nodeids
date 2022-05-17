@@ -1,0 +1,4 @@
+[
+  "test_ipinfo.py::test_ipinfo_japan_ip",
+  "test_ipinfo.py::test_ipinfo_mexican_ip"
+]
