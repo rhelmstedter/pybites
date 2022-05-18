@@ -1,0 +1,5 @@
+[
+  "test_xmas.py::test_height_xmas_tree",
+  "test_xmas.py::test_num_stars_used",
+  "test_xmas.py::test_outputs"
+]
