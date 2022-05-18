@@ -1,0 +1,7 @@
+[
+  "test_files.py::test_get_files[byte_sizes0-1-expected0]",
+  "test_files.py::test_get_files[byte_sizes1-1-expected1]",
+  "test_files.py::test_get_files[byte_sizes2-1.026-expected2]",
+  "test_files.py::test_get_files[byte_sizes3-1.25-expected3]",
+  "test_files.py::test_get_files[byte_sizes4-2-expected4]"
+]
