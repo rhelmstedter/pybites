@@ -1,0 +1,5 @@
+[
+  "test_friends.py::test_default_friendships_list",
+  "test_friends.py::test_different_friendships_list",
+  "test_friends.py::test_friendships_list_with_duplicate_names"
+]

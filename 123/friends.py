@@ -27,7 +27,7 @@ def get_friend_with_most_friends(friendships, users=users):
     of (name_friend_with_most_friends, his_or_her_friends)"""
     friend_lists = defaultdict(list)
     for friendship in friendships:
-        friend_lists[users[friendship[0]]].append(users[friendship[1]])
-        friend_lists[users[friendship[1]]].append(users[friendship[0]])
+        friend_lists[friendship[0]].append(users[friendship[1]])
+        friend_lists[friendship[1]].append(users[friendship[0]])
     most_popular = sorted(friend_lists.items(), key=lambda user: len(user[-1]))[-1]
-    return most_popular
+    return users[most_popular[0]], most_popular[-1]
