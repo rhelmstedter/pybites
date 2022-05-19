@@ -1,0 +1,20 @@
+[
+  "test_anagram.py::test_is_anagram[Madam Curie-Radium came]",
+  "test_anagram.py::test_is_anagram[William Shakespeare-I am a weakish speller]",
+  "test_anagram.py::test_is_anagram[adultery-true lady]",
+  "test_anagram.py::test_is_anagram[customers-store scum]",
+  "test_anagram.py::test_is_anagram[forty five-over fifty]",
+  "test_anagram.py::test_is_anagram[funeral-real fun]",
+  "test_anagram.py::test_is_anagram[rail safety-fairy tales]",
+  "test_anagram.py::test_is_anagram[restful-fluster]",
+  "test_anagram.py::test_is_anagram[roast beef-eat for BSE]",
+  "test_anagram.py::test_is_not_anagram[Madam Curie-Radium come]",
+  "test_anagram.py::test_is_not_anagram[William Shakespeare-I am a strong speller]",
+  "test_anagram.py::test_is_not_anagram[adultery-true ladie]",
+  "test_anagram.py::test_is_not_anagram[customers-store scam]",
+  "test_anagram.py::test_is_not_anagram[forty five-over fifty1]",
+  "test_anagram.py::test_is_not_anagram[funeral-real funny]",
+  "test_anagram.py::test_is_not_anagram[rail safety-fairy fun]",
+  "test_anagram.py::test_is_not_anagram[restful-fluester]",
+  "test_anagram.py::test_is_not_anagram[roast beef-eat for ME]"
+]
