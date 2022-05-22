@@ -2,7 +2,7 @@ names = "Julian Bob PyBites Dante Martin Rodolfo".split()
 countries = "Australia Spain Global Argentina USA Mexico".split()
 
 
-def enumerate_names_countries():
+def enumerate_names_countries() -> None:
     """Outputs:
     1. Julian     Australia
     2. Bob        Spain
