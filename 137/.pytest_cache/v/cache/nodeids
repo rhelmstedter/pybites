@@ -1,0 +1,15 @@
+[
+  "test_gourmet.py::test_all_wines_included",
+  "test_gourmet.py::test_best_match_per_wine_all",
+  "test_gourmet.py::test_best_match_per_wine_type[case0]",
+  "test_gourmet.py::test_best_match_per_wine_type[case1]",
+  "test_gourmet.py::test_best_match_per_wine_type[case2]",
+  "test_gourmet.py::test_invalid_wine_type",
+  "test_gourmet.py::test_match_wine_5cheeses[case0]",
+  "test_gourmet.py::test_match_wine_5cheeses[case1]",
+  "test_gourmet.py::test_match_wine_5cheeses[case2]",
+  "test_gourmet.py::test_match_wine_5cheeses[case3]",
+  "test_gourmet.py::test_match_wine_5cheeses[case4]",
+  "test_gourmet.py::test_match_wine_5cheeses[case5]",
+  "test_gourmet.py::test_match_wine_5cheeses[case6]"
+]
