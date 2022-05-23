@@ -1,0 +1,6 @@
+[
+  "test_stocks.py::test_cap_str_to_mln_float",
+  "test_stocks.py::test_get_industry_cap",
+  "test_stocks.py::test_get_sectors_with_max_and_min_stocks",
+  "test_stocks.py::test_get_stock_symbol_with_highest_cap"
+]
