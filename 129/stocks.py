@@ -1,7 +1,6 @@
 from collections import Counter
 
 import requests
-from rich import print
 
 STOCK_DATA = "https://bites-data.s3.us-east-2.amazonaws.com/stocks.json"
 

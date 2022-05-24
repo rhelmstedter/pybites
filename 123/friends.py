@@ -26,8 +26,8 @@ def get_friend_with_most_friends(friendships, users=users):
     parse it to see who has most friends, return a tuple
     of (name_friend_with_most_friends, his_or_her_friends)"""
     friend_lists = defaultdict(list)
-    for friendship in friendships:
-        friend_lists[friendship[0]].append(users[friendship[1]])
-        friend_lists[friendship[1]].append(users[friendship[0]])
-    most_popular = sorted(friend_lists.items(), key=lambda user: len(user[-1]))[-1]
-    return users[most_popular[0]], most_popular[-1]
+    for p1, p2 in friendships:
+        friend_lists[p1].append(users[p2])
+        friend_lists[p2].append(users[p1])
+    user, friends = sorted(friend_lists.items(), key=lambda user: len(user[1]))[-1]
+    return users[user], friends
