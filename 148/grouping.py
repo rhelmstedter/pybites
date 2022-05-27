@@ -25,10 +25,9 @@ def group_cars_by_manufacturer(cars):
        No return here, just print to the console. We use pytest > capfd to
        validate your output :)
     """
-    cars = sorted(cars, key=lambda x: x[0])
+    cars = sorted(cars)
     for manufacturer, manu_group in groupby(cars, key=lambda x: x[0]):
         print(manufacturer.upper())
         for car in manu_group:
             print(f"- {car[1]}")
         print()
-
