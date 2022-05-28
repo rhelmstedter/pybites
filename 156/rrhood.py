@@ -46,6 +46,11 @@ The woodsman knocked out the wolf and carried him deep into the forest where he 
 Little Red Riding Hood and her Grandmother had a nice lunch and a long chat.
 """
 
+def _process_aliases(index: dict, character: tuple, line:str, i:int):
+    for alias in character:
+        if alias.lower() in line and i not in index[character[0].lower()]:
+            index[character[0].lower()].append(i)
+    return index
 
 def make_character_index(text=text, characters=CHARACTERS):
     """Return a dict with keys are characters (lowercased) and values
@@ -57,16 +62,10 @@ def make_character_index(text=text, characters=CHARACTERS):
     """
     index = defaultdict(list)
 
-    for i, line in enumerate(text.splitlines()):
-        line = line.lower()
-        for character in CHARACTERS:
+    for i, line in enumerate(text.lower().splitlines()):
+        for character in characters:
             if isinstance(character, tuple):
-                for alias in character:
-                    if alias.lower() in line:
-                        index[character[0].lower()].append(i)
+                index = _process_aliases(index, character, line, i)
             elif character.lower() in line:
                 index[character.lower()].append(i)
-    return dict(index)
-
-if __name__ == "__main__":
-   print(make_character_index())
+    return index
