@@ -1,0 +1,4 @@
+{
+  "test_rrhood.py::test_make_character_index_with_default_args": true,
+  "test_rrhood.py::test_make_character_index_with_other_args": true
+}
