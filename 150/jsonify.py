@@ -19,12 +19,13 @@ id,first_name,last_name,email
 
 
 def convert_to_json(members=members):
-    lines = [line.strip("\n") for line in members.strip().split("\n")]
+    lines = members.strip().splitlines()
     fieldnames = re.split(DELIMITERS, lines[0])
+
     data = []
     for line in lines[1:]:
         attributes = re.split(DELIMITERS, line)
-        person = {fieldnames[i]: attributes[i] for i in range(4)}
+        person = dict(zip(fieldnames, attributes))
         data.append(person)
     return json.dumps(data)
 

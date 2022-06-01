@@ -14,4 +14,4 @@ def get_missing_dates(dates):
     first_date, last_date = sorted_dates[0], sorted_dates[-1]
     delta = (last_date - first_date).days
     full_range = [first_date + timedelta(days=n) for n in range(delta + 1)]
-    return [date for date in full_range if date not in dates]
+    return set(full_range) - set(dates)

@@ -68,13 +68,16 @@ def operas_both_at_premiere(guest, composer):
     """
     if not composers.get(guest, None) or not composers.get(composer, None):
         raise ValueError
+
     author_operas = [opera for opera in operas if opera.author == composer]
-    guest_birth = _get_date(composers[guest][1])
-    guest_death = _get_date(composers[guest][2])
-    composer_birth = _get_date(composers[composer][1])
-    composer_death = _get_date(composers[composer][2])
+
+    guest_birth = _get_date(composers[guest].born)
+    guest_death = _get_date(composers[guest].died)
+    composer_death = _get_date(composers[composer].died)
+
     return [
         opera.play
         for opera in author_operas
-        if guest_birth < _get_date(opera.date) < guest_death and composer_birth < _get_date(opera.date) < composer_death
+        if guest_birth < _get_date(opera.date) < guest_death
+        and _get_date(opera.date) < composer_death
     ]
