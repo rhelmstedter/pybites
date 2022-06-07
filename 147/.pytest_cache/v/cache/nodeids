@@ -1,0 +1,4 @@
+[
+  "test_hundred_days.py::test_get_hundred_weekdays_default_start_date",
+  "test_hundred_days.py::test_get_hundred_weekdays_different_start_date"
+]

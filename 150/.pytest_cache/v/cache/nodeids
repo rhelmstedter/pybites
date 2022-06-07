@@ -1,0 +1,4 @@
+[
+  "test_jsonify.py::test_extracted_data_is_correct",
+  "test_jsonify.py::test_return_type"
+]

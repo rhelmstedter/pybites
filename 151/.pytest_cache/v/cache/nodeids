@@ -1,0 +1,9 @@
+[
+  "test_operas.py::test_beethoven_mozart",
+  "test_operas.py::test_beethoven_wagner",
+  "test_operas.py::test_non_listed_composer",
+  "test_operas.py::test_non_listed_guest",
+  "test_operas.py::test_verdi_wagner",
+  "test_operas.py::test_wagner_beethoven",
+  "test_operas.py::test_wagner_verdi"
+]

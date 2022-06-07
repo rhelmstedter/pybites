@@ -1,0 +1,4 @@
+[
+  "test_reqs.py::test_changed_dependencies_old_vs_new",
+  "test_reqs.py::test_changed_dependencies_other_data"
+]

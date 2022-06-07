@@ -1,3 +1,6 @@
+from datetime import date, timedelta
+
+
 def get_missing_dates(dates):
     """Receives a range of dates and returns a sequence
        of missing datetime.date objects (no worries about order).
@@ -7,4 +10,8 @@ def get_missing_dates(dates):
 
        See the Bite description and tests for example outputs.
     """
-    pass
+    sorted_dates = sorted(dates)
+    first_date, last_date = sorted_dates[0], sorted_dates[-1]
+    delta = (last_date - first_date).days
+    full_range = [first_date + timedelta(days=n) for n in range(delta + 1)]
+    return set(full_range) - set(dates)

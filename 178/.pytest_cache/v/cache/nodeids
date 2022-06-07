@@ -1,0 +1,6 @@
+[
+  "test_commits.py::test_get_min_max_amount_of_commits[2017-expected1]",
+  "test_commits.py::test_get_min_max_amount_of_commits[2018-expected2]",
+  "test_commits.py::test_get_min_max_amount_of_commits[2019-expected3]",
+  "test_commits.py::test_get_min_max_amount_of_commits[None-expected0]"
+]

@@ -1,0 +1,23 @@
+[
+  "test_calculator.py::test_bad_inputs[1 / 0]",
+  "test_calculator.py::test_bad_inputs[1 2 3]",
+  "test_calculator.py::test_bad_inputs[1 ^ 2]",
+  "test_calculator.py::test_bad_inputs[1 x 2]",
+  "test_calculator.py::test_bad_inputs[2 / b]",
+  "test_calculator.py::test_bad_inputs[a / 3]",
+  "test_calculator.py::test_bad_inputs[c / d]",
+  "test_calculator.py::test_bad_inputs[really_bad_data]",
+  "test_calculator.py::test_bad_inputs[some random string]",
+  "test_calculator.py::test_multiply[-5 * -11-55]",
+  "test_calculator.py::test_multiply[2 * 3-6]",
+  "test_calculator.py::test_multiply[3 * -6--18]",
+  "test_calculator.py::test_subtract[12 - 18--6]",
+  "test_calculator.py::test_subtract[16 - 11-5]",
+  "test_calculator.py::test_subtract[3 - 2-1]",
+  "test_calculator.py::test_sum[12 + 18-30]",
+  "test_calculator.py::test_sum[2 + 3-5]",
+  "test_calculator.py::test_sum[5 + 11-16]",
+  "test_calculator.py::test_true_division[-2 / 175--0.01]",
+  "test_calculator.py::test_true_division[1 / 5-0.2]",
+  "test_calculator.py::test_true_division[2 / 3-0.67]"
+]
