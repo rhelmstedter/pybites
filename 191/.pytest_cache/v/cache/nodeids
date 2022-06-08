@@ -1,0 +1,5 @@
+[
+  "test_bmi.py::test_person_max_bmi",
+  "test_bmi.py::test_person_max_bmi_another_smaller_dataset",
+  "test_bmi.py::test_person_max_bmi_smaller_dataset"
+]
