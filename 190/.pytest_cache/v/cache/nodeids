@@ -1,0 +1,6 @@
+[
+  "test_income.py::test_return_function[High income-countries0]",
+  "test_income.py::test_return_function[Low income-countries1]",
+  "test_income.py::test_return_function[Lower middle income-countries2]",
+  "test_income.py::test_return_function[Upper middle income-countries3]"
+]
