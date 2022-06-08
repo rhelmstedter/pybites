@@ -1,0 +1,14 @@
+[
+  "test_books.py::test_get_number_books_read[100-11-20-2019-90]",
+  "test_books.py::test_get_number_books_read[100-2019-04-02-26]",
+  "test_books.py::test_get_number_books_read[100-5/20/2019-40]",
+  "test_books.py::test_get_number_books_read[100-None-21]",
+  "test_books.py::test_get_number_books_read[100-Sunday, March 18th, 2019-23]",
+  "test_books.py::test_get_number_books_read[100-Sunday, March 25th, 2019-25]",
+  "test_books.py::test_get_number_books_read[52-April 2nd, 2019-14]",
+  "test_books.py::test_get_number_books_read[52-None-11]",
+  "test_books.py::test_get_number_books_read[52-Sunday, March 18th, 2019-12]",
+  "test_books.py::test_get_number_books_read[52-Sunday, March 25th, 2019-13]",
+  "test_books.py::test_not_positive_goal_exception",
+  "test_books.py::test_past_date_exception"
+]
