@@ -1,0 +1,10 @@
+[
+  "test_spelling.py::test_suggest_word[acceptible-acceptable]",
+  "test_spelling.py::test_suggest_word[accidentaly-accidentally]",
+  "test_spelling.py::test_suggest_word[accomodate-accommodate]",
+  "test_spelling.py::test_suggest_word[accross-across]",
+  "test_spelling.py::test_suggest_word[acheive-achieve]",
+  "test_spelling.py::test_suggest_word[agressive-aggressive]",
+  "test_spelling.py::test_suggest_word[allmost-almost]",
+  "test_spelling.py::test_suggest_word[aquire-acquire]"
+]
