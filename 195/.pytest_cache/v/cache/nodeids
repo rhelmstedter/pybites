@@ -1,0 +1,7 @@
+[
+  "test_nba.py::test_avg_years_active_players_stanford",
+  "test_nba.py::test_number_of_players_from_duke",
+  "test_nba.py::test_player_with_max_points_per_game",
+  "test_nba.py::test_total_row_count_after_import",
+  "test_nba.py::test_year_with_most_new_players"
+]
