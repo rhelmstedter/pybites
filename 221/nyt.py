@@ -24,7 +24,7 @@ def get_best_seller_titles(url=URL_NON_FICTION):
        Dev docs: https://developer.nytimes.com/docs/books-product/1/overview
     """
     r = requests.get(url).json()
-    longest_lasting = [(book['title'], book['rank_last_week']) for book in r['results']['books']]
+    longest_lasting = [(book['title'], book['weeks_on_list']) for book in r['results']['books']]
     return sorted(longest_lasting, key=lambda x: x[1], reverse=True)
 
 
