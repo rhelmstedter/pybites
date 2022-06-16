@@ -1,6 +1,6 @@
 import requests
 
-YOUR_KEY = 'EYnXw0szAiQyr2J3IAWINTBgd90s6zFq'
+YOUR_KEY = 'not today satan'
 DEFAULT_LIST = 'hardcover-nonfiction'
 
 URL_NON_FICTION = (f'https://api.nytimes.com/svc/books/v3/lists/current/'

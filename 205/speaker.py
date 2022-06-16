@@ -48,17 +48,11 @@ def get_percentage_of_female_speakers(first_names):
     of female speakers (female and mostly_female),
     rounded to 2 decimal places."""
     d = gender.Detector()
-    count = sum(
-        1
-        for name in first_names
-        if d.get_gender(name) == "female" or d.get_gender(name) == "mostly_female"
-    )
+    count = sum(1 for name in first_names if "female" in d.get_gender(name))
     return round(count / len(first_names) * 100, 2)
 
 
 if __name__ == "__main__":
-    from rich import print
-
     first_names = get_pycon_speaker_first_names()
     perc = get_percentage_of_female_speakers(first_names)
     print(perc)
