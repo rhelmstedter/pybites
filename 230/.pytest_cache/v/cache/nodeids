@@ -1,0 +1,23 @@
+[
+  "test_thumbs.py::test_exception",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[-1-\\U0001f44e]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[-10-\\U0001f44e (10x)]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[-2-\\U0001f44e\\U0001f44e]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[-3-\\U0001f44e\\U0001f44e\\U0001f44e]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[-4-\\U0001f44e (4x)]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[-5-\\U0001f44e (5x)]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[-6-\\U0001f44e (6x)]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[-7-\\U0001f44e (7x)]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[-8-\\U0001f44e (8x)]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[-9-\\U0001f44e (9x)]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[1-\\U0001f44d]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[10-\\U0001f44d (10x)]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[2-\\U0001f44d\\U0001f44d]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[3-\\U0001f44d\\U0001f44d\\U0001f44d]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[4-\\U0001f44d (4x)]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[5-\\U0001f44d (5x)]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[6-\\U0001f44d (6x)]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[7-\\U0001f44d (7x)]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[8-\\U0001f44d (8x)]",
+  "test_thumbs.py::test_operator_overloading_works_both_ways[9-\\U0001f44d (9x)]"
+]
