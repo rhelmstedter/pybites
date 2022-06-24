@@ -1,0 +1,4 @@
+[
+  "test_survivors.py::test_different_output",
+  "test_survivors.py::test_output_matches"
+]
