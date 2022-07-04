@@ -3,5 +3,6 @@
   "test_color.py::test_gen_hex_color_bad_sample",
   "test_color.py::test_gen_hex_color_black",
   "test_color.py::test_gen_hex_color_mid",
+  "test_color.py::test_gen_hex_color_params",
   "test_color.py::test_gen_hex_color_white"
 ]
