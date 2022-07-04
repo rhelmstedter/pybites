@@ -15,6 +15,7 @@ def test_gen_hex_color_black(gen):
         mocked_sample.return_value = [0, 0, 0]
         actual = next(gen)
         assert actual == "#000000"
+        assert len(actual) == 7
 
 
 def test_gen_hex_color_white(gen):
@@ -22,6 +23,7 @@ def test_gen_hex_color_white(gen):
         mocked_sample.return_value = [255, 255, 255]
         actual = next(gen)
         assert actual == "#FFFFFF"
+        assert len(actual) == 7
 
 
 def test_gen_hex_color_mid(gen):
@@ -29,3 +31,11 @@ def test_gen_hex_color_mid(gen):
         mocked_sample.return_value = [100, 88, 159]
         actual = next(gen)
         assert actual == "#64589F"
+        assert len(actual) == 7
+
+
+def test_gen_hex_color_bad_sample(gen):
+    with patch('color.sample') as mocked_sample:
+        with pytest.raises(ValueError):
+            mocked_sample.return_value = [100, 88, 159, 34]
+            actual = next(gen)
