@@ -1,3 +1,4 @@
 {
-  "test_color.py::test_gen_hex_color_mid": true
+  "test_color.py::test_gen_hex_color_mid": true,
+  "test_color.py::test_gen_hex_color_params": true
 }
