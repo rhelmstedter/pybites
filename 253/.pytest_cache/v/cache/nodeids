@@ -1,0 +1,20 @@
+[
+  "test_series.py::test_complex_series_maths[add-expected0]",
+  "test_series.py::test_complex_series_maths[div-expected3]",
+  "test_series.py::test_complex_series_maths[mul-expected2]",
+  "test_series.py::test_complex_series_maths[sub-expected1]",
+  "test_series.py::test_create_series_mask[arg0-expected0]",
+  "test_series.py::test_create_series_mask[arg1-expected1]",
+  "test_series.py::test_custom_series_function",
+  "test_series.py::test_series_simple_math[arg0-expected0]",
+  "test_series.py::test_series_simple_math[arg1-expected1]",
+  "test_series.py::test_series_simple_math[arg10-expected10]",
+  "test_series.py::test_series_simple_math[arg2-expected2]",
+  "test_series.py::test_series_simple_math[arg3-expected3]",
+  "test_series.py::test_series_simple_math[arg4-expected4]",
+  "test_series.py::test_series_simple_math[arg5-expected5]",
+  "test_series.py::test_series_simple_math[arg6-expected6]",
+  "test_series.py::test_series_simple_math[arg7-expected7]",
+  "test_series.py::test_series_simple_math[arg8-expected8]",
+  "test_series.py::test_series_simple_math[arg9-expected9]"
+]
