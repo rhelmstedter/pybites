@@ -1,0 +1,10 @@
+[
+  "test_pycons.py::test_filter_pycons_cities",
+  "test_pycons.py::test_filter_pycons_continent",
+  "test_pycons.py::test_filter_pycons_dates",
+  "test_pycons.py::test_filter_pycons_number",
+  "test_pycons.py::test_filter_pycons_year",
+  "test_pycons.py::test_get_pycon_events_cities",
+  "test_pycons.py::test_get_pycon_events_dates",
+  "test_pycons.py::test_get_pycon_events_number"
+]
