@@ -18,10 +18,7 @@ def calculate_flux(XYZ: str) -> list:
         .assign(percent_flux=lambda df_: round(df_["dollar_flux"] / df_["12/31/19"], 2))
     )
 
-    return [
-        (row.Account, row._2, row._3, row.dollar_flux, row.percent_flux)
-        for row in df.itertuples()
-    ]
+    return list(df.values)
 
 
 def identify_flux(xyz: list) -> list:
@@ -37,7 +34,4 @@ def identify_flux(xyz: list) -> list:
         .where(lambda df_: abs(df_.percent_flux) > THRESHOLDS[1], NaN)
         .dropna()
     )
-    return [
-        (row.Account, row._2, row._3, row.dollar_flux, row.percent_flux)
-        for row in df.itertuples()
-    ]
+    return list(df.values)
