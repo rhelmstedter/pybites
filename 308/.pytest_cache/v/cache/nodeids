@@ -1,0 +1,14 @@
+[
+  "test_calc_median_from_dict.py::test_median_from_dict__valid_numbers[test_input0-1]",
+  "test_calc_median_from_dict.py::test_median_from_dict__valid_numbers[test_input1-1.5]",
+  "test_calc_median_from_dict.py::test_median_from_dict__valid_numbers[test_input2-2]",
+  "test_calc_median_from_dict.py::test_median_from_dict__valid_numbers[test_input3-2]",
+  "test_calc_median_from_dict.py::test_median_from_dict__valid_numbers[test_input4-2]",
+  "test_calc_median_from_dict.py::test_median_from_dict__valid_numbers[test_input5-2]",
+  "test_calc_median_from_dict.py::test_median_from_dict__valid_numbers[test_input6-1.5]",
+  "test_calc_median_from_dict.py::test_median_from_dict_raises_error[test_input0]",
+  "test_calc_median_from_dict.py::test_median_from_dict_raises_error[test_input1]",
+  "test_calc_median_from_dict.py::test_median_from_dict_valid_huge_numbers[test_input0-2]",
+  "test_calc_median_from_dict.py::test_median_from_dict_valid_huge_numbers[test_input1-2]",
+  "test_calc_median_from_dict.py::test_median_from_dict_valid_huge_numbers[test_input2-7]"
+]
