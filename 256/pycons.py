@@ -252,10 +252,10 @@ def get_pycon_events(data=_get_pycon_data()) -> List[PyCon]:
     application/ld+json data structure website data.
     """
     soup = Soup(data, "html.parser")
-    events = []
-    for s in soup.find_all("script", {"type": "application/ld+json"}):
-        for event in s.contents:
-            event = json.loads(event)
+    pycon_events = []
+    for event in soup.find_all("script", {"type": "application/ld+json"}):
+        event = json.loads(event.text)
+        if "PyCon" in event["name"]:
             p = PyCon(
                 name=event["name"],
                 city=event["location"]["address"]["addressLocality"],
@@ -264,9 +264,8 @@ def get_pycon_events(data=_get_pycon_data()) -> List[PyCon]:
                 end_date=parse(event["endDate"]),
                 url=event["url"],
             )
-            if "PyCon" in p.name:
-                events.append(p)
-    return events
+            pycon_events.append(p)
+    return pycon_events
 
 
 def filter_pycons(
@@ -277,15 +276,12 @@ def filter_pycons(
     a list of PyCons that take place in that year and on
     that continent.
     """
-    filtered_events = []
-    for event in pycons:
-        if event.start_date.year != year:
-            continue
-        elif get_continent(event.country) != continent:
-            continue
-        else:
-            filtered_events.append(event)
-    return filtered_events
+    filtered_pycons = [
+        pycon
+        for pycon in pycons
+        if pycon.start_date.year == year and get_continent(pycon.country) == continent
+    ]
+    return filtered_pycons
 
 
 if __name__ == "__main__":

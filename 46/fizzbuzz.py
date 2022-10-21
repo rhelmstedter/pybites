@@ -1,8 +1,12 @@
 def fizzbuzz(num):
-    if not num % 15:
+    if num % 15 == 0:
         return "Fizz Buzz"
-    elif not num % 5:
+    elif num % 5 == 0:
         return "Buzz"
-    elif not num % 3:
+    elif num % 3 == 0:
         return "Fizz"
     return num
+
+
+if __name__ == "__main__":
+    print(fizzbuzz(0))

@@ -70,14 +70,22 @@ def filter_killed_mutants(mutpy_output: list = None) -> list:
     if mutpy_output is None:
         mutpy_output = _get_data()
     save_details = False
-    saved_lines = []
+    filteredlines = []
+
     for line in reversed(mutpy_output):
-        if "survived" in line:
-            save_details = True
-        elif "incompetent" in line or 'killed' in line:
-            save_details = False
+        match line:
+            case str() as survived if "survived" in survived:
+                save_details = True
+            case str() as success if "incompetent" in success or "killed" in success:
+                save_details = False
+
         if save_details:
-            saved_lines.append(line)
+            filteredlines.append(line)
         elif line.startswith("   -") or line.startswith("["):
-            saved_lines.append(line)
-    return saved_lines[::-1]
+            filteredlines.append(line)
+    return filteredlines[::-1]
+
+
+if __name__ == "__main__":
+    from rich import print
+    print(filter_killed_mutants())

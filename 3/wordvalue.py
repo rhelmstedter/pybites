@@ -18,7 +18,9 @@ scrabble_scores = [
     (10, "Q Z"),
 ]
 LETTER_SCORES = {
-    letter: score for score, letters in scrabble_scores for letter in letters.split()
+    letter: score
+    for score, letters in scrabble_scores
+    for letter in letters.split()
 }
 
 

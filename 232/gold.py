@@ -38,7 +38,6 @@ def years_gold_value_decreased(gold_prices: str = gold_prices) -> (int, int):
     )
     data = (
         data
-        .astype((int, float))
         .assign(change=lambda x: x.price.diff())
     )
     return (data.change.idxmin(), data.change.idxmax())

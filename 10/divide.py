@@ -8,3 +8,7 @@ def positive_divide(numerator, denominator):
         return 0
     except TypeError:
         raise TypeError
+
+
+if __name__ == "__main__":
+    print(positive_divide(1, 4))
