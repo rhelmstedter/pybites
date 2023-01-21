@@ -1,0 +1,8 @@
+[
+  "test_two_dice_advantage.py::test_new_expected_value[10-7.15]",
+  "test_two_dice_advantage.py::test_new_expected_value[20-13.825]",
+  "test_two_dice_advantage.py::test_new_expected_value[6-4.472]",
+  "test_two_dice_advantage.py::test_original_expected_value[10-5.5]",
+  "test_two_dice_advantage.py::test_original_expected_value[20-10.5]",
+  "test_two_dice_advantage.py::test_original_expected_value[6-3.5]"
+]
