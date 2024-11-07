@@ -1,9 +1,0 @@
-{
-  "test_howold.py::test_get_age[actor0-movie0-Wesley Snipes was 28 years old when New Jack City came out.]": true,
-  "test_howold.py::test_get_age[actor1-movie1-Robert de Niro was 47 years old when Goodfellas came out.]": true,
-  "test_howold.py::test_get_age[actor2-movie2-Jennifer Aniston was 42 years old when Horrible Bosses came out.]": true,
-  "test_howold.py::test_get_age[actor3-movie3-Mikey Rourke was 39 years old when Harley Davidson and the Marlboro Man came out.]": true,
-  "test_howold.py::test_get_age[actor4-movie4-Al Pacino was 33 years old when Heat came out.]": true,
-  "test_howold.py::test_get_age[actor5-movie5-Alec Baldwin was 30 years old when Glengarry Glen Ross came out.]": true,
-  "test_howold.py::test_get_age[actor6-movie6-Michelle Pfeiffer was 25 years old when Scarface came out.]": true
-}

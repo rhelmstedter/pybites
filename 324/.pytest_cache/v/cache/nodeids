@@ -1,8 +1,0 @@
-[
-  "test_pretty_string.py::test_pretty_str[input_obj0-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]]",
-  "test_pretty_string.py::test_pretty_str[input_obj1-[['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A'],\\n ['A',\\n  'A',\\n  'A',\\n  'A',\\n  'A',\\n  'A',\\n  'A',\\n  'A',\\n  'A',\\n  'A',\\n  'A',\\n  'A']]]",
-  "test_pretty_string.py::test_pretty_str[input_obj2-[1, [2, [...]]]]",
-  "test_pretty_string.py::test_pretty_str[input_obj3-['aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',\\n ['bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'],\\n [3.0, [...]]]]",
-  "test_pretty_string.py::test_pretty_str[input_obj4-{'a': 3, 'c': 2, 'z': 1}]",
-  "test_pretty_string.py::test_pretty_str[input_obj5-{'font-family': 'serif',\\n 'font-style': 'normal',\\n 'font-variant': 'normal',\\n 'font-weight': '400',\\n 'line-height': '1',\\n 'speak': 'none',\\n 'text-transform': 'none'}]"
-]

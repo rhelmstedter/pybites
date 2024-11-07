@@ -1,7 +1,0 @@
-[
-  "test_timezones.py::test_all_good_aus_just_in_time_summertime",
-  "test_timezones.py::test_change_winter_time_aus_now_too_late",
-  "test_timezones.py::test_too_late_aus",
-  "test_timezones.py::test_too_late_for_chicago",
-  "test_timezones.py::test_wrong_timezone"
-]

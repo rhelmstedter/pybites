@@ -1,8 +1,0 @@
-[
-  "test_dt_convert.py::test_convert_eu_to_us_date",
-  "test_dt_convert.py::test_convert_eu_to_us_date_invalid_day",
-  "test_dt_convert.py::test_convert_eu_to_us_date_invalid_month",
-  "test_dt_convert.py::test_convert_eu_to_us_date_invalid_year",
-  "test_dt_convert.py::test_years_ago",
-  "test_dt_convert.py::test_years_ago_wrong_input"
-]

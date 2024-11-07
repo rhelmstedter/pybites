@@ -1,6 +1,0 @@
-[
-  "test_wordvalue.py::test_calc_word_value",
-  "test_wordvalue.py::test_load_words",
-  "test_wordvalue.py::test_max_word_value",
-  "test_wordvalue.py::test_non_scrabble_characters"
-]

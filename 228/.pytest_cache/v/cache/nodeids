@@ -1,8 +1,0 @@
-[
-  "test_gravatar.py::test_gravatar[ support@pybit.es-1000]",
-  "test_gravatar.py::test_gravatar[info@pybit.ES-40]",
-  "test_gravatar.py::test_gravatar[info@pybit.es -200]",
-  "test_gravatar.py::test_gravatar[info@pybit.es-200]",
-  "test_gravatar.py::test_gravatar[support@PYBIT.es-200]",
-  "test_gravatar.py::test_gravatar[support@pybit.es-200]"
-]

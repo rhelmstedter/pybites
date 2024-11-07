@@ -1,5 +1,0 @@
-[
-  "test_tree.py::test_files_and_dirs",
-  "test_tree.py::test_only_dirs",
-  "test_tree.py::test_only_files"
-]

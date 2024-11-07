@@ -1,8 +1,0 @@
-[
-  "test_marvel.py::test_get_percentage_female_characters",
-  "test_marvel.py::test_get_percentage_female_characters_smaller_data_set",
-  "test_marvel.py::test_max_and_min_years_new_characters",
-  "test_marvel.py::test_max_and_min_years_new_characters_smaller_data_set",
-  "test_marvel.py::test_most_popular_characters",
-  "test_marvel.py::test_most_popular_characters_smaller_data_set_and_top_2"
-]

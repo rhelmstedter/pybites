@@ -1,4 +1,0 @@
-[
-  "test_app.py::test_root_endpoint_only_get",
-  "test_app.py::test_root_endpoint_with_get"
-]

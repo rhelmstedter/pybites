@@ -1,8 +1,0 @@
-[
-  "test_tomorrow.py::test_leap_year",
-  "test_tomorrow.py::test_next_day",
-  "test_tomorrow.py::test_next_year",
-  "test_tomorrow.py::test_no_args",
-  "test_tomorrow.py::test_non_leap_year",
-  "test_tomorrow.py::test_random_date"
-]

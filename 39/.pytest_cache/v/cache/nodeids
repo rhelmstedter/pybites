@@ -1,4 +1,0 @@
-[
-  "test_coursetime.py::test_calc_total_course_duration",
-  "test_coursetime.py::test_get_all_timestamps"
-]

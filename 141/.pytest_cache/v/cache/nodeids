@@ -1,8 +1,0 @@
-[
-  "test_primitive_date_inferrer.py::test_ddmmyy",
-  "test_primitive_date_inferrer.py::test_different_enum",
-  "test_primitive_date_inferrer.py::test_mmddyy",
-  "test_primitive_date_inferrer.py::test_tie",
-  "test_primitive_date_inferrer.py::test_too_many_nonparsable",
-  "test_primitive_date_inferrer.py::test_yymmdd"
-]

@@ -1,7 +1,0 @@
-[
-  "test_grouping.py::test_different_iterable_size",
-  "test_grouping.py::test_different_n",
-  "test_grouping.py::test_passing_in_generator",
-  "test_grouping.py::test_passing_in_tuple",
-  "test_grouping.py::test_split_10_ints_by_3"
-]

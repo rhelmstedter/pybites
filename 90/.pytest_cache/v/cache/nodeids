@@ -1,7 +1,0 @@
-[
-  "test_southpark.py::test_get_words_spoken_season1_cartman",
-  "test_southpark.py::test_get_words_spoken_season1_cartman_least_talkative",
-  "test_southpark.py::test_get_words_spoken_season1_stan",
-  "test_southpark.py::test_get_words_spoken_season5_choksondik",
-  "test_southpark.py::test_get_words_spoken_season5_sheila"
-]
