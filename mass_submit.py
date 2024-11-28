@@ -1,3 +1,4 @@
+import logging
 import json
 import sys
 from dataclasses import dataclass
@@ -5,8 +6,9 @@ from os import environ
 from pathlib import Path
 
 from dotenv import dotenv_values
-from playwright.sync_api import Page, sync_playwright
+from playwright.sync_api import Page, sync_playwright, TimeoutError
 from rich.traceback import install
+from rich.progress import track
 
 from console import console
 from constants import (
@@ -19,6 +21,13 @@ from constants import (
 )
 
 install(show_locals=True)
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter("[%(levelname)s]%(message)s")
+file_handler = logging.FileHandler("mass_submit.log")
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
 
 
 @dataclass
@@ -145,35 +154,41 @@ def submit_bite(
         None
 
     """
+    page.set_default_timeout(TIMEOUT_LENGTH)
     bite.fetch_local_code(config)
     if bite.local_code is None:
-        console.print(
-            ":warning: Unable to find local code for bite.",
-            style=ConsoleStyle.WARNING.value,
+        logger.error(
+            f"\n  Bite: {bite.title}\n  Status: Unable to find bite",
         )
         return
 
-    page.goto(bite.url)
-    page.wait_for_url(bite.url)
-    page.evaluate(
-        f"""document.querySelector('.CodeMirror').CodeMirror.setValue({
-            repr(bite.local_code)})"""
-    )
-    page.click("#validate-button")
-    page.wait_for_selector("#feedback", state="visible")
-    page.wait_for_function(
-        "document.querySelector('#feedback').innerText.includes('test session starts')"
-    )
+    try:
+
+        page.goto(bite.url)
+        page.wait_for_url(bite.url)
+        page.evaluate(
+            f"""document.querySelector('.CodeMirror').CodeMirror.setValue({
+                repr(bite.local_code)})"""
+        )
+        page.click("#validate-button")
+        page.wait_for_selector("#feedback", state="visible")
+        page.wait_for_function(
+            "document.querySelector('#feedback').innerText.includes('test session starts')"
+        )
+    except TimeoutError:
+        logger.error(
+            f"\n  Bite: {bite.title}\n  Status: Timed out",
+        )
+        page.goto(PROFILE_URL)
+        return page
 
     validate_result = page.text_content("#feedback")
     if "Congrats, you passed this Bite" in validate_result:
-        console.print(f"{bite.title} and passed!", style=ConsoleStyle.SUCCESS.value)
+        logger.info(f"\n  Bite: {bite.title}\n  Status: Passed")
     else:
-        console.print(
-            f":warning: {bite.title} did not pass the tests.",
-            style=ConsoleStyle.WARNING.value,
+        logger.warning(
+            f"\n  Bite: {bite.title}\n  Status: Failed",
         )
-    return page
 
 
 if __name__ == "__main__":
@@ -196,6 +211,6 @@ if __name__ == "__main__":
                     "Ensure your credentials are valid.",
                     style=ConsoleStyle.SUGGESTION.value,
                 )
-            for bite in bites.items():
+            for bite in track(bites.items(), "Submitting Bites..."):
                 bite = Bite(*bite)
-                page = submit_bite(bite, config, page)
+                submit_bite(bite, config, page)
