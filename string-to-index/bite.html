@@ -1,0 +1,64 @@
+<p class="text-sm italic text-gray-700 dark:text-white mb-4">
+              Level: Intermediate (score: 3)
+            </p>
+<p class="text-gray-700"></p><p>Write a function that converts letters (from the English alphabet) into their corresponding zero-based indices (where A = 0, B = 1, C = 2, and so on).</p>
+<p>The input can be a string or a list of strings, and it can also handle ranges, like "A:C", meaning all letters from A to C.</p><p></p>
+<hr class="my-4 dark:border-gray-900"/>
+<p class="text-gray-700"></p><ul>
+<li>
+<p><strong>Single Letters:</strong></p>
+<ul>
+<li>For single letters like <code>"A"</code>, the function will calculate their position in the alphabet and return their zero-based index.</li>
+<li><code>"A"</code> → 0 (because it's the first letter), <code>"B"</code> → 1, etc.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ranges (e.g., <code>"A:C"</code>):</strong></p>
+<ul>
+<li>For a range like <code>"A:C"</code>, the function will return all indices from the start to the end of the range.</li>
+<li><code>"A:C"</code> → [0, 1, 2] (for A, B, C).</li>
+</ul>
+</li>
+<li>
+<p><strong>Handling Strings vs Lists:</strong></p>
+<ul>
+<li>If the input is a string, it splits by commas and removes spaces to extract individual elements or ranges.</li>
+<li>If the input is a list, each element in the list is processed as either a letter or a range.</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<hr/>
+<h3 id="example-1" tabindex="-1">Example 1:</h3>
+<pre>&gt;&gt;&gt; from string_to_index import convert_string_to_index
+&gt;&gt;&gt; myinput = "A"
+&gt;&gt;&gt; string_to_index(mystring)
+[0]
+
+# Explanation "A" is the first letter and [0] is the first index
+</pre>
+<h3 id="example-2" tabindex="-1">Example 2:</h3>
+<pre>&gt;&gt;&gt; from string_to_index import string_to_index
+&gt;&gt;&gt; myinput = "A:C"
+&gt;&gt;&gt; string_to_index(mystring)
+[0, 1, 2]
+
+# Explanation: the range "A:C" includes "A", "B" and "C"; their
+# corresponding indices are 0, 1, 2.
+</pre>
+<h3 id="example-2-1" tabindex="-1">Example 3:</h3>
+<pre>&gt;&gt;&gt; from string_to_index import string_to_index
+&gt;&gt;&gt; myinput = ["D:G", "L"]
+&gt;&gt;&gt; string_to_index(myinput)
+[3, 4, 5, 6, 11]
+
+# Explanation: the list contains a range, "D:G", which when unpacked is "D", "E", "F", "G",
+# whose correspdonding indices are 3, 4, 5, 6. And it also contains a single letter, "L",
+# whose corresponding index is 11.
+</pre><p></p>
+<div class="mt-4">
+<a class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full tag" href="/bites/tag/index-based-encoding">Index-based encoding</a>
+<a class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full tag" href="/bites/tag/string-manipulation">string manipulation</a>
+<a class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full tag" href="/bites/tag/range-generation">range generation</a>
+</div>
+</div>
