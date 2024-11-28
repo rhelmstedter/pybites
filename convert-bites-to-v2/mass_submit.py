@@ -163,7 +163,6 @@ def submit_bite(
         return
 
     try:
-
         page.goto(bite.url)
         page.wait_for_url(bite.url)
         page.evaluate(
