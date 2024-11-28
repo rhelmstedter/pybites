@@ -1,7 +1,0 @@
-[
-  "test_join_lists.py::test_join_lists[input_list0-&-None]",
-  "test_join_lists.py::test_join_lists[input_list1-|-expected1]",
-  "test_join_lists.py::test_join_lists[input_list2-&-expected2]",
-  "test_join_lists.py::test_join_lists[input_list3-&-expected3]",
-  "test_join_lists.py::test_join_lists[input_list4-+-expected4]"
-]

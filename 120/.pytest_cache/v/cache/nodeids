@@ -1,6 +1,0 @@
-[
-  "test_validate.py::test_invalid_type_float",
-  "test_validate.py::test_invalid_type_str",
-  "test_validate.py::test_negative_number",
-  "test_validate.py::test_valid_args"
-]

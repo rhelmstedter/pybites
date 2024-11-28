@@ -1,8 +1,0 @@
-[
-  "test_combinations.py::test_generate_letter_combinations[2-expected0]",
-  "test_combinations.py::test_generate_letter_combinations[23-expected1]",
-  "test_combinations.py::test_generate_letter_combinations[234-expected3]",
-  "test_combinations.py::test_generate_letter_combinations[79-expected2]",
-  "test_combinations.py::test_generate_letter_combinations_long_input",
-  "test_combinations.py::test_generate_letter_combinations_repeated_digits"
-]

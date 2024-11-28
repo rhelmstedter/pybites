@@ -1,7 +1,0 @@
-[
-  "test_eggs.py::test_call_next_on_iterator",
-  "test_eggs.py::test_iterator_generates_random_colors",
-  "test_eggs.py::test_iterator_raises_stop_iteration_exception",
-  "test_eggs.py::test_iterator_type",
-  "test_eggs.py::test_len_iterator_is_limit_input_arg"
-]

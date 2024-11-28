@@ -1,6 +1,0 @@
-[
-  "test_stay_positive.py::test_filter_tweets_keep_negative",
-  "test_stay_positive.py::test_filter_tweets_keep_positive",
-  "test_stay_positive.py::test_order_tweets_negative_highest",
-  "test_stay_positive.py::test_order_tweets_positive_highest"
-]

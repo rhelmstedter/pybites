@@ -1,6 +1,0 @@
-[
-  "test_login.py::test_docstring",
-  "test_login.py::test_loggedin",
-  "test_login.py::test_no_account",
-  "test_login.py::test_not_loggedin"
-]

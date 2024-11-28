@@ -1,8 +1,0 @@
-[
-  "test_bites.py::test_different_args_for_N[10-expected2]",
-  "test_bites.py::test_different_args_for_N[2-expected0]",
-  "test_bites.py::test_different_args_for_N[6-expected1]",
-  "test_bites.py::test_only_intro_bites[1-expected0]",
-  "test_bites.py::test_only_intro_bites[15-expected2]",
-  "test_bites.py::test_only_intro_bites[3-expected1]"
-]

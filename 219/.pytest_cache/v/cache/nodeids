@@ -1,5 +1,0 @@
-[
-  "test_notifications.py::test_one_bite_a_day",
-  "test_notifications.py::test_one_bite_every_other_day",
-  "test_notifications.py::test_two_bites_every_three_days"
-]

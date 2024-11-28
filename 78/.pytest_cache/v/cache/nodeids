@@ -1,6 +1,0 @@
-[
-  "test_common.py::test_adding_programmer_without_js",
-  "test_common.py::test_adding_programmer_without_js_nor_python",
-  "test_common.py::test_common_languages",
-  "test_common.py::test_common_languages_adding_new_common_language"
-]

@@ -1,7 +1,0 @@
-[
-  "test_models.py::test_create_food_casting_no_exception",
-  "test_models.py::test_create_food_object",
-  "test_models.py::test_create_food_required_attrs",
-  "test_models.py::test_create_food_without_fibre",
-  "test_models.py::test_create_food_wrong_serving_type"
-]

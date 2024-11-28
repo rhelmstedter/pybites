@@ -1,7 +1,0 @@
-[
-  "test_timings.py::test_get_bite_with_fastest_avg_test[100-169]",
-  "test_timings.py::test_get_bite_with_fastest_avg_test[150-169]",
-  "test_timings.py::test_get_bite_with_fastest_avg_test[200-46]",
-  "test_timings.py::test_get_bite_with_fastest_avg_test[250-expected_bites4]",
-  "test_timings.py::test_get_bite_with_fastest_avg_test[50-121]"
-]

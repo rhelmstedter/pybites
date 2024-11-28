@@ -422,15 +422,15 @@ def convert_dirs(bites_map: dict, formatted_bites: dict):
         bite_title = bites_map.get(old_dir)
         slug = formatted_bites[bite_title]["slug"]
         local_bites[bite_title] = f"{URL_BASE}{slug}/"
-        # try:
-        #     pathlib.Path(old_dir).rename(pathlib.Path(new_dir))
-        # except FileExistsError:
-        #     continue
-        # except OSError:
-        #     print(f"Failed to rename {old_dir} to {new_dir}")
-        #     continue
-    # with open(".local_bites.json", "w") as f:
-    #     json.dump(local_bites, f, indent=2)
+        try:
+            pathlib.Path(old_dir).rename(pathlib.Path(slug))
+        except FileExistsError:
+            continue
+        except OSError:
+            print(f"Failed to rename {old_dir} to {slug}")
+            continue
+    with open(".local_bites.json", "w") as f:
+        json.dump(local_bites, f, indent=2)
 
 
 # def add_local_bites(bites_map):

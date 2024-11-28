@@ -1,5 +1,0 @@
-[
-  "test_duplicates.py::test_get_duplicate_indices_another_text",
-  "test_duplicates.py::test_get_duplicate_indices_bite_text",
-  "test_duplicates.py::test_get_duplicate_indices_docstring"
-]
