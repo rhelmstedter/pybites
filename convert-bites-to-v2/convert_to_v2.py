@@ -51,7 +51,7 @@ def convert_dirs(bites_map: dict, formatted_bites: dict):
             continue
         bite_title = bites_map.get(old_dir)
         slug = formatted_bites[bite_title]["slug"]
-        local_bites[bite_title] = f"{URL_BASE}{slug}/"
+        local_bites[bite_title] = slug
         try:
             pathlib.Path(old_dir).rename(pathlib.Path(slug))
         except FileExistsError:
