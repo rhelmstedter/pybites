@@ -1,0 +1,36 @@
+<p class="text-sm italic text-gray-700 dark:text-white mb-4">
+              Level: Advanced (score: 4)
+            </p>
+<p class="text-gray-700"></p><p>In this Bite you will strip off all comments from some Python source code. Complete <code>strip_comments</code> that takes some multiline code string and strip out:</p>
+<ul>
+<li>Single line comments = lines that start with <code>#</code>.</li>
+<li>PEP8-compliant inline comments, so code followed by 2 spaces, a <code>#</code>, a space and comment.</li>
+<li>Multiline comments / docstrings (<code>"""my\ncomment"""</code>), which could be non indented (at the module level) or indented in a function/ method. You can assume these have always 3 double, not single, quotes.</li>
+</ul>
+<p>Return a string of the code without comments.</p>
+<p>So this code:</p>
+<pre>"""this is
+my awesome script
+"""
+# importing modules
+import re
+
+def hello(name):
+    """my function docstring"""
+    return f'hello {name}'  # my inline comment
+</pre>
+<p>... would result in:</p>
+<pre>import re
+
+def hello(name):
+    return f'hello {name}'
+</pre>
+<p>Good luck and keep calm and code in Python!</p><p></p>
+<hr class="my-4 dark:border-gray-900"/>
+<p class="text-gray-700"></p>
+<div class="mt-4">
+<a class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full tag" href="/bites/tag/regular-expressions">regular expressions</a>
+<a class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full tag" href="/bites/tag/comments">comments</a>
+<a class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full tag" href="/bites/tag/string-parsing">string parsing</a>
+</div>
+</div>
