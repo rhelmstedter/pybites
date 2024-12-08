@@ -1,0 +1,32 @@
+<p class="text-sm italic text-gray-700 dark:text-white mb-4">
+              Level: Beginner (score: 2)
+            </p>
+<p class="text-gray-700"></p><p>Write a simple generator that counts from 100 to 1. It can just return the <code>int</code>s one by one, no fancy formatting, just focus on the basic mechanics of generators. Remember that going beyond <code>1</code> it would trigger a <code>StopIteration</code> exception.</p>
+<p>Here is how it works:</p>
+<pre>&gt;&gt;&gt; from countdown import countdown
+&gt;&gt;&gt; cd = countdown()
+&gt;&gt;&gt; next(cd)
+100
+&gt;&gt;&gt; next(cd)
+99
+&gt;&gt;&gt; next(cd)
+98
+&gt;&gt;&gt; next(cd)
+97
+...
+... 95 calls more
+...
+&gt;&gt;&gt; next(cd)
+1
+&gt;&gt;&gt; next(cd)
+Traceback (most recent call last):
+  File "", line 1, in 
+StopIteration
+</pre>
+<p>Good luck, have fun and keep it Python!</p><p></p>
+<hr class="my-4 dark:border-gray-900"/>
+<p class="text-gray-700"></p>
+<div class="mt-4">
+<a class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full tag" href="/bites/tag/generators">generators</a>
+</div>
+</div>

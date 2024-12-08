@@ -1,0 +1,26 @@
+<p class="text-sm italic text-gray-700 dark:text-white mb-4">
+              Level: Beginner (score: 2)
+            </p>
+<p class="text-gray-700"></p><p>Python 3.9 brought an exciting enhancement to the dict built-in class!</p>
+<p>Dictionaries can now be merged with the <code>|</code> operator (<a href="https://peps.python.org/pep-0584/" rel="noopener" target="_blank">PEP 584</a>).</p>
+<p>This small change lets us write more compact expressions with dictionaries that are easier to read.</p>
+<p>Here's an exercise to let you try <code>|</code> out on dictionaries.</p>
+<h3>Learner's Task</h3>
+<p>In this Bite, you will write the function, <code>combine_and_count()</code>, which creates the union of a pair of dictionaries, and returns a dictionary that combines the keys and values of both.</p>
+<p>If a key appears in both dictionaries, you should sum their values.</p>
+<p>Notice that this last is <strong>not</strong> what <code>|</code> does with dicts.</p>
+<p>If two dictionaries, <code>A</code> and <code>B</code> share a key, the value for that key in <code>A</code> | <code>B</code> is the value found in the second dictionary, <code>B</code>, like this:</p>
+<pre>&gt;&gt;&gt; fruit = {'apple': 3, 'banana': 2, 'orange': 1}<br/>&gt;&gt;&gt; more_fruit = {'pear': 5, 'orange': 2, 'kiwi': 1}<br/>&gt;&gt;&gt; (fruit | more_fruit)['orange']<br/>2<br/>&gt;&gt;&gt; (more_fruit | fruit)['orange']<br/>1</pre>
+<p>Because you want <code>combine_and_count()</code>, to combine values, you'll also have to check for duplicate keys and, whenever you find them, combine the values by hand.</p>
+<h3>Example</h3>
+<pre>&gt;&gt;&gt; fruit = {'apple': 3, 'banana': 2, 'orange': 1}<br/>&gt;&gt;&gt; veggies = {'radish': 5, 'artichoke': 2, 'chard': 1}<br/>&gt;&gt;&gt; combine_and_count(fruit, veggies)<br/>{'apple': 3, 'banana': 2, 'orange': 1, 'radish': 5, 'artichoke': 2, 'chard': 1}<br/>&gt;&gt;&gt; more_fruit = {'pear': 5, 'orange': 2, 'kiwi': 1}<br/>&gt;&gt;&gt; combine_and_count(fruit, more_fruit)  # add the values for 'orange'<br/>{'apple': 3, 'banana': 2, 'orange': 3, 'pear': 5, 'kiwi': 1}</pre>
+<p>If either dictionary is empty, the function should return the other dictionary:</p>
+<pre>&gt;&gt;&gt; empty_sack = {}<br/>&gt;&gt;&gt; combine_and_count(fruit, empty_sack)<br/>{'apple': 3, 'banana': 2, 'orange': 1}<br/>&gt;&gt;&gt; combine_and_count(empty_sack, more_fruit)<br/>{'pear': 5, 'orange': 2, 'kiwi': 1}</pre>
+<p>Keep calm and code in Python!</p><p></p>
+<hr class="my-4 dark:border-gray-900"/>
+<p class="text-gray-700"></p>
+<div class="mt-4">
+<a class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full tag" href="/bites/tag/dict">dict</a>
+<a class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full tag" href="/bites/tag/union">union</a>
+</div>
+</div>
