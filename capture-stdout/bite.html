@@ -1,0 +1,24 @@
+<p class="text-sm italic text-gray-700 dark:text-white mb-4">
+              Level: Intermediate (score: 3)
+            </p>
+<p class="text-gray-700"></p><p>Sometimes you need to capture <em>stdout</em> in your script. Python makes it easy with <code>contextlib</code>'s <code>redirect_stdout</code>.</p>
+<p>In this Bite you will use it to get the length of a help text as returned by <code>help</code>.</p>
+<p>Complete <code>get_len_help_text</code> which receives a builtin. Run <code>help</code> against this builtin and capture its output in a variable and return its length (number of chars). If a non-builtin is passed into the function, raise a <code>ValueError</code> (hint: you can use <code>BuiltinFunctionType</code> to check this).</p>
+<p>Here you see the function in action:</p>
+<pre>&gt;&gt;&gt; from helplen import get_len_help_text
+&gt;&gt;&gt; get_len_help_text(max)
+402
+&gt;&gt;&gt; get_len_help_text(pow)
+278
+&gt;&gt;&gt; get_len_help_text('bogus')
+...
+ValueError
+</pre>
+<p>Good luck and keep calm and code in Python!</p><p></p>
+<hr class="my-4 dark:border-gray-900"/>
+<p class="text-gray-700"></p>
+<div class="mt-4">
+<a class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full tag" href="/bites/tag/context-managers">context managers</a>
+<a class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full tag" href="/bites/tag/stringio">StringIO</a>
+</div>
+</div>

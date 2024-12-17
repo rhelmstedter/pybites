@@ -25,23 +25,35 @@ def years_gold_value_decreased(gold_prices: str = gold_prices) -> (int, int):
     """Analyze gold_prices returning a tuple of the year the gold price
     decreased the most and the year the gold price increased the most.
     """
-    formated_gold_prices = StringIO(
-        gold_prices
+    formated_gold_prices = (gold_prices
         .strip()
-        .replace("-12", "")
         .replace(" ", "\n")
-    )
-    data = pd.read_csv(
-        formated_gold_prices,
-        index_col=0,
-        names=["date", "price"]
-    )
-    data = (
-        data
-        .assign(change=lambda x: x.price.diff())
-    )
-    return (data.change.idxmin(), data.change.idxmax())
+        )
+    years = str(formated_gold_prices).splitlines()
+    min = 0
+    max = 0
+    min_year = 0
+    max_year = 0
+    for cur, next  in zip(years, years[1:]):
+        year, price = cur.split(",")
+        next_year, next_price = next.split(",")
+        if float(price) -
+        
 
+
+        
+
+    # data = pd.read_csv(
+    #     formated_gold_prices,
+    #     index_col=0,
+    #     names=["date", "price"]
+    # )
+    # data = (
+    #     data
+    #     .assign(change=lambda x: x.price.diff())
+    # )
+    # return (data.change.idxmin(), data.change.idxmax())
+    #
 
 if __name__ == "__main__":
     years_gold_value_decreased()
