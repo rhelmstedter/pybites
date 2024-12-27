@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+
 def group_anagrams(strings: list[str]) -> list[list[str]]:
     """Group anagrams together."""
     anagrams = defaultdict(list)
